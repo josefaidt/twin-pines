@@ -1,0 +1,19 @@
+<script>
+	import { getContext } from "svelte";
+	let { toggle } = getContext("theme");
+</script>
+
+<style>
+	button {
+	  border: none;
+	  padding: 8px 12px;
+    border-radius: 3px;
+    background-color: lightgrey;
+	  /* background-color: var(--theme-text); */
+	  color: var(--theme-base-text);
+	}
+</style>
+
+<button on:click={toggle}>
+  Toggle Theme
+</button>

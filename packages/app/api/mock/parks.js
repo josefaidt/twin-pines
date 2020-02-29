@@ -1,4 +1,4 @@
-const data = require('./_alerts.json')
+const data = require('./_parks.json')
 
 module.exports = (req, res) => {
   res.json(data)

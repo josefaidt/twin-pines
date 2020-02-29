@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo|Open+Sans&display=swap');
 
+:root {
+  --theme: 'hello';
+}
+
 html,
 body {
   position: relative;

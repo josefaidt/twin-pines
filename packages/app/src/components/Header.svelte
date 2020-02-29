@@ -1,12 +1,14 @@
 <script>
+  import ThemeToggle from './ThemeToggle.svelte'
   export let title = 'Twin Pines'
 </script>
 
 <header>
   <h1>{title}</h1>
-  <nav>
+  <ThemeToggle />
+  <!-- <nav>
     <a href="#">Home</a>
-  </nav>
+  </nav> -->
 </header>
 
 <style>
@@ -16,6 +18,8 @@
 		font-size: 4em;
     font-weight: 100;
     margin: 0;
+
+    align-self: flex-start;
   }
 
   header {
