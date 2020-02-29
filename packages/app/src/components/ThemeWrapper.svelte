@@ -30,11 +30,18 @@
     theme: themes[_current],
     toggle: () => {
       _current = _current === themes.length - 1 ? 0 : (_current += 1);
+      localStorage.setItem('__twinpines-theme', _current)
       setRootColors(themes[_current]);
     }
   });
 
   onMount(() => {
+    let storedThemeChoice = localStorage.getItem('__twinpines-theme')
+    if (storedThemeChoice) {
+      _current = parseInt(storedThemeChoice)
+    } else {
+      localStorage.setItem('__twinpines-theme', _current)
+    }
     setRootColors(base)
     setRootColors(themes[_current]);
   });
