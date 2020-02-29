@@ -4,8 +4,8 @@
 </script>
 
 <main>
-	<h1>What do now?</h1>
-	<p>Welcome to your personal To-Do List</p>
+	<h1>Twin Pines</h1>
+	<p></p>
 	<List />
 </main>
 

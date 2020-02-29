@@ -1,25 +1,35 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["packages/*"],
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public"
+    "start": "yarn app -- start",
+    "dev": "yarn app -- dev",
+    "app": "yarn workspace app run"
   },
   "devDependencies": {
     "@josefaidt/eslint-config": "^0.1.11",
     "@josefaidt/prettier-config": "^0.0.2",
-    "@rollup/plugin-node-resolve": "^6.0.0",
-    "eslint": "^6.7.2",
-    "prettier": "^1.19.1",
-    "rollup": "^1.12.0",
-    "rollup-plugin-commonjs": "^10.0.0",
-    "rollup-plugin-livereload": "^1.0.0",
-    "rollup-plugin-svelte": "^5.0.3",
-    "rollup-plugin-terser": "^5.1.2",
-    "svelte": "^3.0.0"
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "eslint": "^6.8.0",
+    "prettier": "^1.19.1"
   },
-  "dependencies": {
-    "sirv-cli": "^0.4.4"
+  "eslintConfig": {
+    "extends": "@josefaidt/eslint-config"
+  },
+  "prettier": "@josefaidt/prettier-config",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{md,mdx,json}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

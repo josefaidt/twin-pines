@@ -1,6 +1,5 @@
 <script>
   export let list
-
   list = [
     {
       id: 0,

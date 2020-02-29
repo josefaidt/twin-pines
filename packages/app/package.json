@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c",
+    "develop:app": "rollup -c -w",
+    "develop:api": "now dev",
+    "start": "sirv public"
+  },
+  "devDependencies": {
+    "rollup": "^1.32.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-livereload": "^1.0.4",
+    "rollup-plugin-svelte": "^5.1.1",
+    "rollup-plugin-terser": "^5.2.0",
+    "svelte": "^3.19.1",
+    "svelvet": "^0.3.4"
+  },
+  "dependencies": {
+    "sirv-cli": "^0.4.5"
+  },
+  "license": "MIT"
+}
