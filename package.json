@@ -2,8 +2,8 @@
   "private": true,
   "workspaces": ["packages/*"],
   "scripts": {
-    "start": "yarn app -- start",
-    "dev": "yarn app -- dev",
+    "start": "yarn app start",
+    "develop": "yarn app develop",
     "app": "yarn workspace app run"
   },
   "devDependencies": {

@@ -1,0 +1,407 @@
+{
+  "total": "502",
+  "data": [
+      {
+          "title": "Credit Card Only",
+          "id": "13D8DF73-DCD4-0681-C4DCC001D46D1A03",
+          "description": "Adams National Historical Park is credit or debit card only for all America the Beautiful pass purchases.",
+          "category": "Park Closure",
+          "url": "",
+          "parkCode": "adam"
+      },
+      {
+          "title": "Strong Winds and Hazard Trees",
+          "id": "14782F36-1DD8-B71B-0BCA86558413B16E",
+          "description": "Because of recent fires and forest die-back, some areas of the Monument can be dangerous during times of high winds. Use caution and stay alert when hiking on windy days, and backcountry camp well away from stands of dead or fire damaged trees.",
+          "category": "Caution",
+          "url": "",
+          "parkCode": "band"
+      },
+      {
+          "title": "Precautions for Zika Virus",
+          "id": "0A624DA1-1DD8-B71B-0B010C099120ED6E",
+          "description": "There are no areas of ongoing, active transmission of Zika by mosquitoes in Florida, yet please take appropriate personal protection measures including the use of insect repellent and wearing long-sleeved shirts and long pants during your park visit.",
+          "category": "Information",
+          "url": "https://www.nps.gov/articles/zika-virus.htm",
+          "parkCode": "bisc"
+      },
+      {
+          "title": "50th Anniversary Logo Contest",
+          "id": "083E97B8-A556-F0F2-A538AA21A9DDB201",
+          "description": "Design a logo for the 50th anniversary of the park.",
+          "category": "Information",
+          "url": "https://www.nps.gov/buff/getinvolved/50th-anniversary-logo-contest.htm",
+          "parkCode": "buff"
+      },
+      {
+          "title": "Ozark Pavilion Closure",
+          "id": "133641EB-C4E7-6637-F376C3988E885732",
+          "description": "The pavilion at Ozark Campground is closed immediately. Severe storms in early January shifted and destabilized the structure, weakening support posts and causing the pavilion to lean. Park maintenance staff will begin repairs in late January.",
+          "category": "Park Closure",
+          "url": "",
+          "parkCode": "buff"
+      },
+      {
+          "title": "Visitor Center Restrooms Will Be Under Construction Starting December 9, 2019.",
+          "id": "0D13CD4E-9848-73E4-BBD5D92A47514028",
+          "description": "Portable facilities will be provided during construction, and additional facilities are available at the lighthouse and tidepool areas. This project is funded by park entrance fees. Your fee dollars at work!",
+          "category": "Information",
+          "url": "",
+          "parkCode": "cabr"
+      },
+      {
+          "title": "Cabin reservations delayed until February 12, 2020",
+          "id": "0E046D74-B444-CF37-FE07989B56E91A53",
+          "description": "Reservation opening date has been rescheduled to February 12, due to an unforeseen and last minute technical glitch.",
+          "category": "Information",
+          "url": "",
+          "parkCode": "calo"
+      },
+      {
+          "title": "Exhibit Space Under Construction: New Exhibit Coming Soon",
+          "id": "0C99CE29-A436-365B-07048FE4C0A02BC4",
+          "description": "The permanent exhibit space is closed through the end of March, 2020 for renovation and installation of a new exhibit. The Cultural Center is open during regular hours. Our overview video, interim exhibit panels, and other visitor services are available.",
+          "category": "Information",
+          "url": "",
+          "parkCode": "cham"
+      },
+      {
+          "title": "Winter Driving Conditions on Rim Rock Drive",
+          "id": "111E6500-C22C-9292-7A860166CBA9BF80",
+          "description": "Winter snowstorms will cause Rim Rock Drive to have icy and snow packed conditions. Even if the road conditions are good at the entrances they may change at higher elevations. Call 970-858-3617 ext 311 for a daily update on the road conditions.",
+          "category": "Caution",
+          "url": "",
+          "parkCode": "colm"
+      },
+      {
+          "title": "2020 Congaree Fireflies Festival",
+          "id": "09E807B6-E39F-B491-FD899DAD0876A4CE",
+          "description": "For those interested in viewing the synchronized fireflies at Congaree National Park in 2020, please view our fireflies page for more information and updates on this year's event.",
+          "category": "Information",
+          "url": "https://www.nps.gov/cong/fireflies.htm",
+          "parkCode": "cong"
+      },
+      {
+          "title": "Scotty's Castle CLOSED until fall 2021.",
+          "id": "104C7082-C671-1015-A61C050298D26588",
+          "description": "Flooding in Grapevine Canyon from a severe thunderstorm has destroyed the road to Scotty's Castle, damaged infrastructure and some out-buildings in the Castle complex.",
+          "category": "Information",
+          "url": "https://www.nps.gov/deva/learn/nature/flood-2015.htm",
+          "parkCode": "deva"
+      },
+      {
+          "title": "Eisenhower Home and Facilities Closed for Winter",
+          "id": "06582F64-ECAB-99A9-2A6CC6B52B5321DE",
+          "description": "All facilities in the park are closed in January and February 2020. The grounds remain open 9 am to 5 pm and visitors may drive out and park in designated parking areas to explore the grounds.",
+          "category": "Information",
+          "url": "https://www.nps.gov/eise/planyourvisit/hours.htm",
+          "parkCode": "eise"
+      },
+      {
+          "title": "Closures due to Brick Repointing",
+          "id": "143D43CB-D89A-DA1B-6D1808BCDF6B81E9",
+          "description": "From November 2019 through August 2020 the entire barbette tier (top floor) and the second and third floor casemates at Fort Point will be closed to accommodate a restorative brick repointing process (renewing the mortar joints in the masonry).",
+          "category": "Park Closure",
+          "url": "",
+          "parkCode": "fopo"
+      },
+      {
+          "title": "Drones are Prohibited in Fort Pulaski National Monument",
+          "id": "02FCBECC-EE02-097B-8D07A98C58A219B5",
+          "description": "The use of drones or other remote-controlled unmanned aircraft, is prohibited in the park for issues relating to visitor safety and experience, and wildlife and resource protection. For more info, see section 1.5(a)(1) of the Superintendent's Compendium.",
+          "category": "Information",
+          "url": "",
+          "parkCode": "fopu"
+      },
+      {
+          "title": "Gallatin House Winter Hours",
+          "id": "142F218E-FC42-0437-0FE1B045DA53E57A",
+          "description": "The Gallatin Houses is open Saturdays and Sundays only, 9 a.m. - 5 p.m. October through April.\nPark grounds and trails remain open daily from sunrise to sunset.",
+          "category": "Information",
+          "url": "",
+          "parkCode": "frhi"
+      },
+      {
+          "title": "Sandy Hook's False Tip will be closed Jan. 20 through March 1",
+          "id": "0E0A3433-F708-FDB3-2904C7D5F6CDB00F",
+          "description": "Sandy Hook's False Tip will be closed from Jan. 20 through March 1.",
+          "category": "Park Closure",
+          "url": "",
+          "parkCode": "gate"
+      },
+      {
+          "title": "Breezy Point Tip Off Road Permits Sold Out for 2020",
+          "id": "0E1FCC04-B65F-470C-CA3038662807F58E",
+          "description": "All 4 X 4 permits have been sold out.",
+          "category": "Information",
+          "url": "",
+          "parkCode": "gate"
+      },
+      {
+          "title": "Phone Outage",
+          "id": "1399DAE6-1DD8-B71B-0B4024249440280B",
+          "description": "Be advised, phone lines with numbers in the 212 area code for General Grant National Memorial are currently not connected.  \n\nPlease call 646-670-7251 to reach the visitor center and our voicemail system.  \n\nThank You!",
+          "category": "Information",
+          "url": "https://www.facebook.com/GrantsTombNPS/",
+          "parkCode": "gegr"
+      },
+      {
+          "title": "Locomotives On Display in Engine House for Winter",
+          "id": "0371A3B1-B3DF-BD66-4CC5629FD5CC3F4D",
+          "description": "The locomotives undergo scheduled maintenance from mid-October to early-April. The locomotives are generally available for viewing in the Engine House during the winter maintenance season. Self-guided and ranger led tours are available most weekends.",
+          "category": "Information",
+          "url": "https://www.nps.gov/gosp/planyourvisit/hours.htm",
+          "parkCode": "gosp"
+      },
+      {
+          "title": "Snake Creek Road Closed at Park Boundary",
+          "id": "142E69B5-9C8D-4EC0-856BFC3EBD5F7BE5",
+          "description": "Due to icy conditions Snake Creek Road is closed at the park boundary.",
+          "category": "Park Closure",
+          "url": "",
+          "parkCode": "grba"
+      },
+      {
+          "title": "Sporadic Temporary Closures this Summer",
+          "id": "1774A423-90D0-DB73-5121BE081F08DF76",
+          "description": "Please check our website and social media sites to stay up to date on Wheeler Peak Scenic Drive Closures, travel restriction and alternative places to hike and camp on your visit to Great Basin the summer of 2020.",
+          "category": "Park Closure",
+          "url": "",
+          "parkCode": "grba"
+      },
+      {
+          "title": "Winter Closures on Medano Pass Primitive Road",
+          "id": "08E2149C-CDF5-1B2A-23C14BAE1A0DA0FD",
+          "description": "The Medano Pass Primitive Road is CLOSED beginning at the Castle Creek Picnic Area (2.6 miles from the southern entrance of the road near the Piñon Flats Campground within the park).  This does NOT affect paved road access to the dunes.",
+          "category": "Information",
+          "url": "https://www.nps.gov/grsa/planyourvisit/medano-pass-road.htm",
+          "parkCode": "grsa"
+      },
+      {
+          "title": "Cades Cove Loop Road Closed Jan. 5-Feb. 29, 2020",
+          "id": "00111C8B-0D20-5A18-F29053A4BE63BA35",
+          "description": "Cades Cove and Laurel Creek Road past the Great Smoky Mountains Institute at Tremont will be closed beginning 8:00 pm Sunday, January 5 through February 29, 2020 for repairs to the Bote Mountain Tunnel on Laurel Creek Road. The roads will reopen March 1.",
+          "category": "Park Closure",
+          "url": "",
+          "parkCode": "grsm"
+      },
+      {
+          "title": "Restrictions on pet(s) trail access - park policy for safety, resource protection and preservation",
+          "id": "0D7D05F2-1DD8-B71B-0B7408F5F119A0C4",
+          "description": "Pets are not permitted on most trails or in the backcountry in Guadalupe Mountains National park. They are only allowed in areas accessed by vehicles, including roadsides, parking areas, picnic areas and campgrounds.",
+          "category": "Information",
+          "url": "https://www.facebook.com/guadalupe.mountains/photos/a.206361422744978.48037.120924901288631/1413538925360549/?type=3&theater",
+          "parkCode": "gumo"
+      },
+      {
+          "title": "Temporary Closure of Civil War Museum",
+          "id": "0731C205-1DD8-B71B-0BEB961F8F021ED8",
+          "description": "The Civil War Museum on High Street is temporarily closed due to water damage. Other museums in Lower Town are unaffected and remain open.",
+          "category": "Information",
+          "url": "",
+          "parkCode": "hafe"
+      },
+      {
+          "title": "Site Opens Late at 12:00 on Wednesday February 26th.",
+          "id": "12B0FD52-CEB1-BA25-6CBA759868D4A02F",
+          "description": "Hamilton Grange National Memorial will be closed between 9 am and 12 pm on Wednesday February 26th.",
+          "category": "Information",
+          "url": "",
+          "parkCode": "hagr"
+      },
+      {
+          "title": "Temporary Closure - Cutthroat Unit",
+          "id": "05F21E50-BD1B-CCED-9744962F976BAFFD",
+          "description": "Due to physical security concerns related to the access of the Cutthroat Unit, the unit is closed to public access.",
+          "category": "Park Closure",
+          "url": "https://www.nps.gov/hove/learn/management/cutthroat-closure-080618.htm",
+          "parkCode": "hove"
+      },
+      {
+          "title": "Island Closed from November 1 through April 15 Annually",
+          "id": "0A1D7A4B-B299-0723-F7D0EAE8824B77F9",
+          "description": "From November 1 - April 15 annually, Isle Royale and its surrounding islands are closed to all visitors. Lake Superior waters are open to boaters. All islands reopen April 16. The Houghton Visitor Center remains open Monday - Friday all year.",
+          "category": "Park Closure",
+          "url": "",
+          "parkCode": "isro"
+      },
+      {
+          "title": "Unmanned Aircraft",
+          "id": "102A7E33-1DD8-B71B-0B02B65EA104FD14",
+          "description": "Launching, landing, or operating an unmanned aircraft from or on lands and waters administered by the National Park Service within the boundaries of Kalaupapa National Historical Park is prohibited.  This includes model airplanes, quadcopters, and drones.",
+          "category": "Information",
+          "url": "",
+          "parkCode": "kala"
+      },
+      {
+          "title": "Calumet Visitor Center Closed for the Winter",
+          "id": "065DE98F-C769-0BE1-935DDEDAD25D43E8",
+          "description": "The Calumet Visitor Center will be closed from January through April 2020. We will open for special events such as Copper Dog 150 and educational events. Please stay tuned to the park’s website and social media pages for Visitor Center updates.",
+          "category": "Park Closure",
+          "url": "",
+          "parkCode": "kewe"
+      },
+      {
+          "title": "Pay by Credit Card Option Now Available",
+          "id": "0852EED1-9B28-61E4-C6822F3C83CBF3B8",
+          "description": "You now have the option to pay by credit card through your smart phone at all National Park Service operated campgrounds and boat launches at Lake Roosevelt National Recreation Area.",
+          "category": "Information",
+          "url": "https://www.nps.gov/laro/learn/news/pay-by-credit-card-option-now-available-for-lake-roosevelt-national-recreation-area-campsite-fees-and-boat-launch-permits.htm",
+          "parkCode": "laro"
+      },
+      {
+          "title": "Limited Public Tours in February and March, Black History Month and Women's History Month",
+          "id": "125947D0-B773-E695-956EB499F05258DB",
+          "description": "Due to a high volume of group tour reservations - most of which are for weekday mornings - public tours of the site will often be limited to the afternoon.  Please call ahead if you're planning to visit so that we accommodate you as best we can",
+          "category": "Information",
+          "url": "",
+          "parkCode": "mawa"
+      },
+      {
+          "title": "Off-Season Operations",
+          "id": "015BCAA9-9295-1E64-8764CBA851B2E5CC",
+          "description": "Through Friday, March 13, 2020, the visitor center will be open from 8:00 a.m. to 4:00 p.m., Tuesday through Saturday. The park will be closed on Sundays and Mondays. Delta-01 tours available Wednesday through Saturdays afternoons.",
+          "category": "Caution",
+          "url": "https://www.nps.gov/mimi/learn/news/nr20-01.htm",
+          "parkCode": "mimi"
+      },
+      {
+          "title": "Please Stay on the Trail",
+          "id": "083F2CA6-B2E4-EDDE-28EA9D41357704F4",
+          "description": "Please stay on the trail to limit exposure to ticks, chiggers (red bugs), and poison ivy.",
+          "category": "Caution",
+          "url": "",
+          "parkCode": "mocr"
+      },
+      {
+          "title": "Paradise snowplay/sledding area is OPEN.",
+          "id": "0E52C3B9-F018-213E-A04845242AA567BB",
+          "description": "Sledding is allowed ONLY in the designated area, and it may close if conditions deteriorate. Check MountRainierNPS on Twitter for updates on the status of the snowplay/sledding area (Twitter account not required to view).",
+          "category": "Information",
+          "url": "https://twitter.com/MountRainierNPS",
+          "parkCode": "mora"
+      },
+      {
+          "title": "Deferred Maintenance Projects During 2020.",
+          "id": "031F10E8-B0B8-FDAC-F5CEEBBF1BA58886",
+          "description": "Due to the opportunity to address deferred maintenance projects, the Lincoln Borglum Visitor Center, amphitheater, Avenue of Flags and a short section of the Presidential Trail are not available during early 2020.",
+          "category": "Information",
+          "url": "https://www.nps.gov/moru/planyourvisit/deferred-maintenance-project-information.htm",
+          "parkCode": "moru"
+      },
+      {
+          "title": "William Johnson House Hours of Operation",
+          "id": "043EFA7C-1DD8-B71B-0BCAE0DCF004BBBF",
+          "description": "Effective March 4, 2018, the William Johnson House site will be open from 12:00 pm until 5:00 pm on Sundays.  The site will be open Monday through Saturdays from 9:00 am until 5:00 pm with an hour closure from 12:00 until 1:00.",
+          "category": "Information",
+          "url": "",
+          "parkCode": "natc"
+      },
+      {
+          "title": "Current Weather Conditions",
+          "id": "030BA669-AD4D-F7A9-CCD604862DB7F1C5",
+          "description": "Use the link below to visit the National Weather Service website for current weather conditions in the park.",
+          "category": "Information",
+          "url": "https://forecast.weather.gov/MapClick.php?lat=36.6888&lon=-110.5248#.XSihQOi6OUk",
+          "parkCode": "nava"
+      },
+      {
+          "title": "Life Jackets Required!",
+          "id": "13E85374-1DD8-B71B-0BF4B6A13BC2DE2D",
+          "description": "By Nebraska State law, all children 12 years old and younger must WEAR a USCG approved life jacket to float the Niobrara NSR. Anyone over 12 years old must HAVE a life jacket. If you are renting equipment, your outfitter will provide them.",
+          "category": "Caution",
+          "url": "",
+          "parkCode": "niob"
+      },
+      {
+          "title": "Welcome Center (WC) Will be Closed from 9AM - 2PM on March 5, 2020",
+          "id": "14D2D7A1-B7B6-ABDA-6A1E758F9DB2D50B",
+          "description": "The WC will be closed from 9AM-2PM on Thursday, March 5, 2020.  The park grounds will remain open for visitation.",
+          "category": "Park Closure",
+          "url": "",
+          "parkCode": "pagr"
+      },
+      {
+          "title": "Bicycle Use In The Monument",
+          "id": "0525B6FD-A68E-F785-D6D83C68CA602388",
+          "description": "Bicycles are ONLY allowed at the following locations:\n\n1 - On the Boca Negra Canyon paved multiuse path; bicycles must remain on the paved bike path. \n2 - On the crusher fine trail that winds in and out of the park around the mesa top above Boca Negra.",
+          "category": "Information",
+          "url": "",
+          "parkCode": "petr"
+      },
+      {
+          "title": "Winter Visitor Center Hours",
+          "id": "1676736A-F9E2-8B1E-09EE3C96D8ACAB98",
+          "description": "Winter hours for the Munising Falls Visitor Center are Wednesday - Saturday from 9:00 am to 4:30 pm. Closed on federal holidays.",
+          "category": "Information",
+          "url": "https://www.nps.gov/piro/planyourvisit/visitorcenters.htm",
+          "parkCode": "piro"
+      },
+      {
+          "title": "Point Reyes Headlands Winter Shuttle Bus System",
+          "id": "0D1C0102-155D-4519-3E562F454506717D",
+          "description": "On weekends & federal holidays, Sir Francis Drake Boulevard may be closed beyond the South Beach Road junction from 9 am until ~5:45 pm during favorable weather conditions. Bus service to the Lighthouse & Chimney Rock is provided from Drakes Beach.",
+          "category": "Information",
+          "url": "https://www.nps.gov/pore/planyourvisit/shuttle.htm",
+          "parkCode": "pore"
+      },
+      {
+          "title": "Avalanches: Be Alert",
+          "id": "0F4A72B7-1DD8-B71B-0B44BED16B9B1B65",
+          "description": "Avalanches can be easily triggered by backcountry travelers. The park does not do any avalanche control. Never assume trails are free of avalanche hazard. Check current avalanche conditions before your visit by clicking \"more.\"",
+          "category": "Caution",
+          "url": "https://avalanche.state.co.us/forecasts/backcountry-avalanche/front-range/",
+          "parkCode": "romo"
+      },
+      {
+          "title": "Limited Number of Tickets to Tour the Roosevelt Home",
+          "id": "0FC0D06E-EA9C-0608-41561EB7D6051E24",
+          "description": "During weekends, holidays, and school breaks there is a high demand for tickets to tour the Roosevelt Home. Tickets sometimes sell out as early as noon. Visitors should arrive early to pick up these first come, first served tickets.",
+          "category": "Information",
+          "url": "https://www.nps.gov/sahi/planyourvisit/fees.htm",
+          "parkCode": "sahi"
+      },
+      {
+          "title": "Road closures nearby",
+          "id": "16EB4BEF-D997-8A24-0106A4C566C4EA53",
+          "description": "Due to Allen St. reconstruction, Franklin St. is blocked at Allen.  Cars should use the Delaware lot entrance.  Buses should disembark on Delaware Ave. in front of the Site and should NOT try to enter the Delaware ramp.  Franklin St. is temporarily 2-way.",
+          "category": "Caution",
+          "url": "",
+          "parkCode": "thri"
+      },
+      {
+          "title": "GPS Navigation Systems",
+          "id": "055E4813-0B1A-740E-65583984DF630CED",
+          "description": "GPS navigation systems often misdirect visitors driving to Ulysses S. Grant National Historic Site. GPS systems often route visitors to our back gate, or to the entrance for Grant's Farm (not affiliated with the NPS). Please visit our directions page.",
+          "category": "Information",
+          "url": "https://www.nps.gov/ulsg/planyourvisit/directions.htm",
+          "parkCode": "ulsg"
+      },
+      {
+          "title": "Chapel Trail Closed East of Washington Memorial Chapel",
+          "id": "0B2070A4-B9FC-A342-5C6BFE736390261A",
+          "description": "Effective immediately, a short portion of the Chapel Trail, from the Washington Memorial Chapel to the Sullivan's Bridge Trail, will be closed through Summer 2020 due to the U.S. 422 Schuylkill River Bridge construction project.",
+          "category": "Information",
+          "url": "",
+          "parkCode": "vafo"
+      },
+      {
+          "title": "Temporary Visitor Center is Open for Business",
+          "id": "0B3B0572-0A9A-72DF-E54F0659D4EFA99F",
+          "description": "Our Temporary Visitor Center offers park information, a full-service bookstore, refreshments, a theater, restrooms and regional visitor information. The park's permanent Visitor Center is currently closed for construction through Spring 2020.",
+          "category": "Information",
+          "url": "https://www.nps.gov/vafo/planyourvisit/visitorcenters.htm",
+          "parkCode": "vafo"
+      },
+      {
+          "title": "No Recreational Vehicle (RV) Parking",
+          "id": "016CC9DB-1DD8-B71B-0B116D5332CAE19A",
+          "description": "Our parking lot cannot accommodate RV's or trailers. Please call the visitor center for options as we have a nearby lot for trailers to detach and are happy to help visitors in RV's plan their way to the park. RV's should NOT pull into the parking lot.",
+          "category": "Information",
+          "url": "",
+          "parkCode": "wefa"
+      }
+  ],
+  "limit": "50",
+  "start": "1"
+}
