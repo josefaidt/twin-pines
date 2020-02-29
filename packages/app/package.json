@@ -3,20 +3,22 @@
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
-    "develop:app": "rollup -c -w",
-    "develop:api": "now dev",
-    "start": "sirv public"
+    "develop": "now dev",
+    "dev": "yarn dev:app",
+    "dev:app": "rollup -c -w",
+    "start": "sirv public --single"
   },
   "devDependencies": {
     "rollup": "^1.32.0",
-    "rollup-plugin-commonjs": "^10.1.0",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@rollup/plugin-commonjs": "^11.0.2",
     "rollup-plugin-livereload": "^1.0.4",
     "rollup-plugin-svelte": "^5.1.1",
     "rollup-plugin-terser": "^5.2.0",
-    "svelte": "^3.19.1",
-    "svelvet": "^0.3.4"
+    "svelte": "^3.19.1"
   },
   "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
     "sirv-cli": "^0.4.5"
   },
   "license": "MIT"

@@ -1,4 +1,7 @@
 {
-  "name": "svelte-app",
-  "version": 2
+  "name": "twin-pines",
+  "version": 2,
+  "env": {
+    "NPS_API_KEY": "@nps_api_key"
+  }
 }
