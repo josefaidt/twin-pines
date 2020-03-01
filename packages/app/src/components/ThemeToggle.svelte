@@ -1,6 +1,6 @@
 <script>
 	import { getContext } from "svelte";
-	let { toggle } = getContext("theme");
+	let { toggle, theme } = getContext("theme");
 </script>
 
 <style>
@@ -15,5 +15,5 @@
 </style>
 
 <button on:click={toggle}>
-  Toggle Theme
+  {$theme.name}
 </button>

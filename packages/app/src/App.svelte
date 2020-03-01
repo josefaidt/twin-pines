@@ -1,5 +1,4 @@
 <script>
-	import List from './components/List.svelte'
 	import Header from './components/Header.svelte'
 	import DataDump from './components/DataDump.svelte'
 	import ParkCard from './components/Card/ParkCard.svelte'

@@ -4,8 +4,10 @@
 
 
   onMount(async () => {
-    const res = await fetch('/api/mock/parks')
-    data = await res.json()
+    if (!data) {
+      const res = await fetch('/api/mock/parks')
+      data = await res.json()
+    }
   });
 </script>
 

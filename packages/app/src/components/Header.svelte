@@ -13,7 +13,7 @@
 
 <style>
   h1 {
-		color: #01796f;
+		color: var(--theme-primary);
 		text-transform: uppercase;
 		font-size: 4em;
     font-weight: 100;
