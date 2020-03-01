@@ -9,8 +9,9 @@
 	  padding: 8px 12px;
     border-radius: 3px;
     background-color: lightgrey;
+		cursor: pointer;
 	  /* background-color: var(--theme-text); */
-	  color: var(--theme-base-text);
+		color: var(--theme-base-text);
 	}
 </style>
 
