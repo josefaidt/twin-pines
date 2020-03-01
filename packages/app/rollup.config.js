@@ -3,6 +3,7 @@ import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'
+import json from '@rollup/plugin-json'
 
 const production = !process.env.ROLLUP_WATCH
 
@@ -24,6 +25,7 @@ export default {
         css.write('public/build/bundle.css')
       },
     }),
+    json(),
 
     // If you have external dependencies installed from
     // npm, you'll most likely need these plugins. In
@@ -36,7 +38,7 @@ export default {
     }),
     commonjs(),
 
-    // In dev mode, call `npm run start` once
+    // In dev mode, call `yarn start` once
     // the bundle has been generated
     !production && serve(),
 
@@ -44,8 +46,8 @@ export default {
     // browser on changes when not in production
     !production && livereload('public'),
 
-    // If we're building for production (npm run build
-    // instead of npm run dev), minify
+    // If we're building for production (yarn build
+    // instead of yarn dev), minify
     production && terser(),
   ],
   watch: {

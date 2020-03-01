@@ -9,13 +9,15 @@
     "start": "sirv public --single"
   },
   "devDependencies": {
-    "rollup": "^1.32.0",
-    "@rollup/plugin-node-resolve": "^7.1.1",
     "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-json": "^4.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup": "^1.32.0",
     "rollup-plugin-livereload": "^1.0.4",
     "rollup-plugin-svelte": "^5.1.1",
     "rollup-plugin-terser": "^5.2.0",
-    "svelte": "^3.19.1"
+    "svelte": "^3.19.1",
+    "svelte-themer": "^0.1.2"
   },
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",

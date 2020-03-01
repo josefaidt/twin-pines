@@ -1,5 +1,5 @@
 <script>
-  import ThemeToggle from './ThemeToggle.svelte'
+  import { ThemeToggle } from 'svelte-themer'
   export let title = 'Twin Pines'
 </script>
 
@@ -30,7 +30,7 @@
   
   @media (min-width: 66rem) {
     header {
-      max-width: 80%;
+      max-width: 66rem;
       margin: auto;
     }
   }

@@ -1,20 +1,21 @@
 <script>
+	import { onMount } from 'svelte'
+	import { ThemeWrapper } from 'svelte-themer'
 	import Header from './components/Header.svelte'
 	import DataDump from './components/DataDump.svelte'
 	import ParkCard from './components/Card/ParkCard.svelte'
-	import ThemeWrapper from './components/ThemeWrapper.svelte'
-	import { onMount } from 'svelte'
+	import Form from './components/Form/Form.svelte'
 	let parkData = {
 		data: []
 	}
 
-	onMount(async () => {
-		const response = await fetch('/api/mock/parks')
-		parkData = await response.json()
-	})
+	// onMount(async () => {
+	// 	const response = await fetch('/api/mock/parks')
+	// 	parkData = await response.json()
+	// })
 </script>
 
-<ThemeWrapper>
+<ThemeWrapper storageKey="twin-pines__theme">
 	<Header />
 	<main>
 		<div class="parks">
@@ -22,7 +23,7 @@
 				<ParkCard parkData={park} />
 			{/each}
 		</div>
-		<DataDump />
+		<Form />
 	</main>
 </ThemeWrapper>
 
