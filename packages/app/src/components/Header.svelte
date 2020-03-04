@@ -14,7 +14,7 @@
 <style>
   h1 {
 		color: var(--theme-primary);
-		text-transform: uppercase;
+		/* text-transform: uppercase; */
 		font-size: 4em;
     font-weight: 100;
     margin: 0;

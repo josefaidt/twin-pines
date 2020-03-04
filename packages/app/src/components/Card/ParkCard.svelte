@@ -5,7 +5,9 @@
 </script>
 
 <article class="card card--{theme.name}">
-  <h2>{parkData.fullName}</h2>
+  <header>
+    <h2>{parkData.fullName}</h2>
+  </header>
   <div class="tp--card--park-states__container">
   {#each parkData.states.split(',') as state}
     <span>{state}</span>
@@ -15,10 +17,16 @@
 
 <style>
   .card {
-    background-color: whitesmoke;
+    background-color: var(--theme-background);
     padding: 1rem;
     border-radius: 0.5rem;
     border: 1px solid;
+  }
+
+  header h1,
+  header h2,
+  header h3 {
+    margin: 0.5rem 0 1rem;
   }
 
   .card--light {

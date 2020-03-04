@@ -1,0 +1,979 @@
+{
+  "total": "8",
+  "data": [
+    {
+      "contacts": {
+        "phoneNumbers": [
+          { "phoneNumber": "3372281094", "description": "", "extension": "", "type": "Voice" }
+        ],
+        "emailAddresses": [{ "description": "", "emailAddress": "atchafalaya@crt.la.gov" }]
+      },
+      "states": "LA",
+      "longitude": "-91.5019378662109",
+      "entranceFees": [{ "cost": "0.0000", "description": "N/A", "title": "N/A" }],
+      "directionsInfo": "There are several visitor locations in the Atchafalaya NHA, please visit www.atchafalaya.org for exact locations and directions.",
+      "entrancePasses": [],
+      "directionsUrl": "http://www.atchafalaya.org/page.php?name=NPS-Passport-Program",
+      "url": "https://www.nps.gov/attr/index.htm",
+      "weatherInfo": "The weather varies throughout the year and even throughout the day. Please check the National Weather Service information at http://www.weather.gov for forecast information.",
+      "name": "Atchafalaya",
+      "operatingHours": [
+        {
+          "exceptions": [],
+          "description": "There are various visitor centers throughout the corridor.",
+          "standardHours": {
+            "wednesday": "All Day",
+            "monday": "All Day",
+            "thursday": "All Day",
+            "sunday": "All Day",
+            "tuesday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "name": "Various Visitor Centers"
+        }
+      ],
+      "latLong": "lat:30.2919769287109, long:-91.5019378662109",
+      "description": "Our country’s landscape is rich and mysterious.  It is filled with twisting bayous, rivers and America’s largest river swamp.  We have fields of sugar cane and cotton, ancient live oaks and towering cypress.  Alligators, raccoons, and even bears roam our lands while 270 species of birds take to our skies.  From our waters come catfish, shrimp, oysters and the crawfish that make us so well known.",
+      "images": [
+        {
+          "credit": "www.atchafalaya.org",
+          "altText": "Atchafalaya Basin",
+          "title": "Atchafalaya Basin",
+          "id": "4741",
+          "caption": "Atchafalaya Basin",
+          "url": "https://www.nps.gov/common/uploads/structured_data/1839B663-1DD8-B71B-0B8969C393EF884A.jpg"
+        }
+      ],
+      "designation": "National Heritage Area",
+      "parkCode": "attr",
+      "addresses": [
+        {
+          "postalCode": "70517",
+          "city": "Butte La Rose",
+          "stateCode": "LA",
+          "line1": "I-10 Atchafalaya Welcome Center",
+          "type": "Physical",
+          "line3": "1908 Atchafalaya River Highway",
+          "line2": "Located in the Bayou Teche Corridor Region"
+        },
+        {
+          "postalCode": "70804-4243",
+          "city": "Baton Rouge,",
+          "stateCode": "LA",
+          "line1": "Louisiana Department of Culture, Recreation & Tourism",
+          "type": "Mailing",
+          "line3": "",
+          "line2": "P. O. Box 44243"
+        }
+      ],
+      "id": "22B8BA4E-3EED-4F41-88A2-A529114B6859",
+      "fullName": "Atchafalaya National Heritage Area",
+      "latitude": "30.2919769287109"
+    },
+    {
+      "contacts": {
+        "phoneNumbers": [
+          { "phoneNumber": "3183520383", "description": "", "extension": "316", "type": "Voice" },
+          { "phoneNumber": "3183524549", "description": "", "extension": "", "type": "Fax" }
+        ],
+        "emailAddresses": [{ "description": "", "emailAddress": "park_inbox@nps.gov" }]
+      },
+      "states": "LA",
+      "longitude": "-93.00131977",
+      "entranceFees": [{ "cost": "0.0000", "description": "No fees", "title": "Entrance Fees" }],
+      "directionsInfo": "To reach Oakland Plantation, take I-49 to Exit 127, Flora/Cypress. Head east on LA Highway 120 toward Cypress. Cross over LA Highway 1 onto LA Highway 494. The parking lot and entrance pavilion for Oakland is 4.5 miles east of Highway 1 on the left.\n\nTo reach the grounds of Magnolia Plantation, take I-49 to Exit 119, Derry. Head east on LA Highway 119. Cross over LA Highway 1 and proceed for 1.1 miles. The parking area of Magnolia Plantation is on the right just before the road closure.",
+      "entrancePasses": [],
+      "directionsUrl": "https://www.nps.gov/cari/planyourvisit/directions.htm",
+      "url": "https://www.nps.gov/cari/index.htm",
+      "weatherInfo": "Weather in central Louisiana can be unpredictable. Summers are hot and humid. Winter is relatively mild with measurable snowfall every 5-10 years. Average rainfall is approximately 55-60 inches per year. The area is also subject to severe thunderstorms, hail, damaging winds, and tornadoes. Visitors might want to bring hats, umbrellas, and drink plenty of water. Please check the local weather forecast before planning your visit to the park.",
+      "name": "Cane River Creole",
+      "operatingHours": [
+        {
+          "exceptions": [
+            {
+              "exceptionHours": { "monday": "Closed" },
+              "startDate": "2018-01-21",
+              "name": "Marti",
+              "endDate": "2018-01-21"
+            }
+          ],
+          "description": "Oakland and Magnolia Plantations are open daily from 9:00 a.m. to 3:30 p.m. All park facilities and grounds are closed ALL federal holidays.",
+          "standardHours": {
+            "wednesday": "9:00AM - 3:30PM",
+            "monday": "9:00AM - 3:30PM",
+            "thursday": "9:00AM - 3:30PM",
+            "sunday": "9:00AM - 3:30PM",
+            "tuesday": "9:00AM - 3:30PM",
+            "friday": "9:00AM - 3:30PM",
+            "saturday": "9:00AM - 3:30PM"
+          },
+          "name": "Oakland and Magnolia Plantations"
+        }
+      ],
+      "latLong": "lat:31.65408447, long:-93.00131977",
+      "description": "The Cane River region is home to a unique culture; the Creoles. Generations of the same families of owners and workers, enslaved and tenant, lived on these lands for over 200 years. The park tells their stories and preserves the cultural landscape of Oakland and Magnolia Plantations, two of the most intact Creole cotton plantations in the United States.",
+      "images": [
+        {
+          "credit": "NPS Photo",
+          "altText": "Magnolia quarters",
+          "title": "Fall perennials in front of Magnolia Quarters",
+          "id": "4309",
+          "caption": "Magnolia plantation quarters were once occupied by the enslaved; they were used in the 20th century by sharecroppers.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C866351-1DD8-B71B-0B19817266121981.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "Yellow canna lilies",
+          "title": "Yellow canna lilies",
+          "id": "4310",
+          "caption": "Yellow canna lilies grow in the bottle garden in front of the Oakland main house.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C8664C5-1DD8-B71B-0BDF39DFAA0CD777.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "Japanese Magnolia",
+          "title": "Japanese Magnolia",
+          "id": "4311",
+          "caption": "Every January, our Japanese Magnolia blooms its splendor pink.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C866627-1DD8-B71B-0BC13EF2796A9953.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "Sunrise over Oakland",
+          "title": "Sunrise",
+          "id": "4312",
+          "caption": "The golden sunrise casts a shadow over the buildings",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C8667FC-1DD8-B71B-0BADB086F410284E.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "Slave/Tenant quarters",
+          "title": "Slave/Tenant quarters",
+          "id": "4313",
+          "caption": "One of two existing Slave /Tenant quarters at Oakland Plantation.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C86697B-1DD8-B71B-0BA31D761B2BF86B.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "Bike Rides",
+          "title": "Bike Rides",
+          "id": "4314",
+          "caption": "Cane River is a great place to take a ride and learn some history; the park offers rides year-round.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C866B2C-1DD8-B71B-0B67D6CC88E9B86F.jpg"
+        },
+        {
+          "credit": "C. Mardorf, NPS Photo.",
+          "altText": "Vintage chairs on the cabin porch at Magnolia Plantation",
+          "title": "Magnolia Quarters",
+          "id": "8973",
+          "caption": "Magnolia Plantation provides a quiet spot for contemplation.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/FFE031E3-1DD8-B71B-0BFF68C105622028.jpg"
+        }
+      ],
+      "designation": "National Historical Park",
+      "parkCode": "cari",
+      "addresses": [
+        {
+          "postalCode": "71457",
+          "city": "Natchitoches",
+          "stateCode": "LA",
+          "line1": "400 Rapides Dr. (Headquarters)",
+          "type": "Mailing",
+          "line3": "",
+          "line2": ""
+        },
+        {
+          "postalCode": "71457",
+          "city": "Natchitoches Parish",
+          "stateCode": "LA",
+          "line1": "4386 Highway 494, Natchez, LA 71456 (Oakland )",
+          "type": "Physical",
+          "line3": "",
+          "line2": "5549 Highway, 119, Cloutierville, LA  71416 (Magnolia)"
+        }
+      ],
+      "id": "55ABA58B-B19E-4851-BDE1-1C0712B2BE2C",
+      "fullName": "Cane River Creole National Historical Park",
+      "latitude": "31.65408447"
+    },
+    {
+      "contacts": {
+        "phoneNumbers": [
+          { "phoneNumber": "318-356-5555", "description": "", "extension": "", "type": "Voice" }
+        ],
+        "emailAddresses": [{ "description": "", "emailAddress": "inquiry@natchitoches.com" }]
+      },
+      "states": "LA",
+      "longitude": "-92.9234390258789",
+      "entranceFees": [
+        {
+          "cost": "0.0000",
+          "description": "Cane River NHA does not charge a federal entrance fee, however, partners may charge entrance fees, and may have separate operating hours.  See http://www.canerivernha.org/, for more information",
+          "title": "Cane River NHA"
+        }
+      ],
+      "directionsInfo": "Cane River National Heritage Area in northwestern Louisiana is a largely rural, agricultural landscape known for its historic plantations, its distinctive Creole architecture, and its multi-cultural legacy. The central corridor of the heritage area begins just south of Natchitoches, and extends along both sides of Cane River Lake for approximately 35 miles.  The heritage area includes Cane River Creole National Historical Park, seven National Historic Landmarks, three State Historic Sites, and other places.",
+      "entrancePasses": [],
+      "directionsUrl": "http://www.canerivernha.org/",
+      "url": "https://www.nps.gov/crha/index.htm",
+      "weatherInfo": "Weather in central Louisiana can be unpredictable. Summers are typically hot and humid, and winters are relatively mild. The area is also subject to severe thunderstorms, hail, damaging winds, and tornadoes. Visitors should be prepared for changing weather conditions.",
+      "name": "Cane River",
+      "operatingHours": [
+        {
+          "exceptions": [],
+          "description": "There are various visitor centers throughout the corridor. Please check directly with each site for specific hours of operation.",
+          "standardHours": {
+            "wednesday": "Sunrise to Sunset",
+            "monday": "Sunrise to Sunset",
+            "thursday": "Sunrise to Sunset",
+            "sunday": "Sunrise to Sunset",
+            "tuesday": "Sunrise to Sunset",
+            "friday": "Sunrise to Sunset",
+            "saturday": "Sunrise to Sunset"
+          },
+          "name": "Various Visitor Centers"
+        }
+      ],
+      "latLong": "lat:31.5982227325439, long:-92.9234390258789",
+      "description": "More than 300-years of history are etched into the rural landscape of colonial forts, plantations, churches, cemeteries, and homes that comprise Cane River National Heritage Area. Historically, this region lay at the intersection of the French and Spanish Realms in the New World, with the town of Natchitoches originating as an important 18th century trade center.",
+      "images": [
+        {
+          "credit": "NPS / Cane River NHA",
+          "altText": "Historic house with steep pitched roof, brick walkways leading up to open front porch",
+          "title": "Roque House",
+          "id": "7958",
+          "caption": "The Roque House, originally built in 1803, has since been restored and is a great example of French Creole architecture.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/1B8BAB85-1DD8-B71B-0BF201D23C6B743B.jpg"
+        },
+        {
+          "credit": "NPS / Cane River NHA",
+          "altText": "Large white plantation house with large two story porch",
+          "title": "Melrose Plantation",
+          "id": "7959",
+          "caption": "The Melrose Plantation was built in 1833 and offers regular tours.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/1BE89FB8-1DD8-B71B-0BDC96876F9EC3CD.jpg"
+        },
+        {
+          "credit": "NPS / Cane River NHA",
+          "altText": "Cotton field with colorful sunset",
+          "title": "Cotton Field",
+          "id": "7960",
+          "caption": "Beauty is all around in Natchitoches Parish.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/1C19CCC4-1DD8-B71B-0BBABA3D07CA0875.jpg"
+        },
+        {
+          "credit": "NPS / Cane River NHA",
+          "altText": "Waterway with deck stretching out over water in foreground and homes on other side of water; sunset",
+          "title": "Cane River",
+          "id": "7961",
+          "caption": "The Cane River which defines the region is actually an oxbow lake that once was the primary channel of the Red River.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/1C303DC6-1DD8-B71B-0B7FCB3A4B7B9789.jpg"
+        }
+      ],
+      "designation": "National Heritage Area",
+      "parkCode": "crha",
+      "addresses": [
+        {
+          "postalCode": "71457",
+          "city": "Natchitoches",
+          "stateCode": "LA",
+          "line1": "Cane River National Heritage Area, Inc",
+          "type": "Physical",
+          "line3": "",
+          "line2": "1115 Washington Street"
+        },
+        {
+          "postalCode": "71457",
+          "city": "Natchitoches",
+          "stateCode": "LA",
+          "line1": "Cane River National Heritage Area, Inc",
+          "type": "Mailing",
+          "line3": "",
+          "line2": "1115 Washington Street"
+        }
+      ],
+      "id": "ABEF2BF6-7B0B-4A3C-A0DA-7031A0D6EB82",
+      "fullName": "Cane River National Heritage Area",
+      "latitude": "31.5982227325439"
+    },
+    {
+      "contacts": {
+        "phoneNumbers": [
+          { "phoneNumber": "5059886098", "description": "", "extension": "", "type": "Voice" },
+          { "phoneNumber": "5059865214", "description": "", "extension": "", "type": "Fax" }
+        ],
+        "emailAddresses": [
+          { "description": "National Trails", "emailAddress": "ntir_information@nps.gov" }
+        ]
+      },
+      "states": "TX,LA",
+      "longitude": "",
+      "entranceFees": [
+        {
+          "cost": "0.0000",
+          "description": "There are NO USER OR ENTRY FEES fees for El Camino Real de los Tejas National Historic Trail. NOMINAL FEES may be charged at some trail-related federal, state, or locally owned historic sites and interpretive facilities. Please visit Plan Your Visit / Places To Go for an interactive map and extensive list of places to visit by state. Contact information is available for each site to call and find out about fees.",
+          "title": "General Entrance Fee Information"
+        }
+      ],
+      "directionsInfo": "You can visit many sites of the El Camino Real de los Tejas National Historic Trail over the 2,580-mile historic U.S. route (thousands of additional miles in Mexico) that crosses 2 states.",
+      "entrancePasses": [],
+      "directionsUrl": "http://www.nps.gov/elte/planyourvisit/directions.htm",
+      "url": "https://www.nps.gov/elte/index.htm",
+      "weatherInfo": "Due to the length of El Camino de los Tejas National Historic Trail, be sure to consult local weather sources for the region you'll be visiting. Check out the forecast with the National Weather Service and search for the area you'd like to visit: www.weather.gov",
+      "name": "El Camino Real de los Tejas",
+      "operatingHours": [
+        {
+          "exceptions": [],
+          "description": "OPERATING HOURS VARY FROM SITE TO SITE. There are many historic sites, museums, and parks (federal, state, and local) along El Camino Real in Texas or Louisiana for you to visit. Please contact individual sites for more information by going to Plan Your Visit and selecting Places To Go or Passport Program, where sites are listed by state, and there is an interactive map to search for sites.\n\nwww.nps.gov/elte/planyourvisit/placestogo.htm",
+          "standardHours": {
+            "wednesday": "All Day",
+            "monday": "All Day",
+            "thursday": "All Day",
+            "sunday": "All Day",
+            "tuesday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "name": "El Camino Real de los Tejas National Historic Trail"
+        }
+      ],
+      "latLong": "",
+      "description": "Come on a journey that will carry you through 300 years of Louisiana and Texas frontier settlement and development on a Spanish colonial \"royal road\" that originally extended to Mexico City, Mexico.",
+      "images": [
+        {
+          "credit": "Christopher Talbot",
+          "altText": "Mexican mission stands in the dirt",
+          "title": "Mission San Bernardo ruins, Guerrero, Coahuila, Mexico",
+          "id": "1980",
+          "caption": "Construction of the mission church began in 1760 but was never completed. The outstanding ruins are virtually the only visible remains of the complex of missions established in the area. The purpose was to convert Coahuiltecan Indians to Catholicism.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7E7812-1DD8-B71B-0B21FD984B4C001C.jpg"
+        },
+        {
+          "credit": "Christopher Talbot",
+          "altText": "lots of greenery along a river; sunflowers in the foreground",
+          "title": "El Paso de Jacinto/Paso de los Indios, Webb County, Texas",
+          "id": "1981",
+          "caption": "Around 1746, explorer Jacinto de León discovered a ford that allowed safe passage across the Río Grande in this vicinity; it had probably been used for centuries by American Indians.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7E7952-1DD8-B71B-0BFB5B12C3B0E5DA.jpg"
+        },
+        {
+          "credit": "Christopher Talbot",
+          "altText": "stone house ruins; briliant green grasses and trees on the right",
+          "title": "Rancho los Ojuelos, Webb County, Texas",
+          "id": "1982",
+          "caption": "This national historic district consists of 13 stone houses (several in ruins) constructed from hewn sandstone blocks, chinked and plastered, ranging from rectangular flat roofed Colonial style buildings to hip roofed two room structures. Post-1750s.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7E7ABC-1DD8-B71B-0B412CEDBCA85B2A.jpg"
+        },
+        {
+          "credit": "Christopher Talbot",
+          "altText": "rock indentations in a dry creek with five people walking under clouds",
+          "title": "McKinney Falls State Park, Travis County, Texas",
+          "id": "1983",
+          "caption": "Recent research reveals that in 1716 the expedition of Domingo Ramón followed the left bank of Onion Creek along the western edge of McKinney Falls State Park to its junction with Williamson Creek. You can walk in rock indentations in the creek bed.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7E7C07-1DD8-B71B-0B637A2BD1BCF7A6.jpg"
+        },
+        {
+          "credit": "Christopher Talbot",
+          "altText": "trail segment indentation with leaves in it, trees along the side",
+          "title": "Mission Tejas State Park, Houston County, Texas",
+          "id": "1984",
+          "caption": "This 1.5-mile-long trail segment crosses an area that has remarkable visual integrity. The trail segment courses parallel to State Road 21 and at times crosses the highway.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C7E7D2D-1DD8-B71B-0BBC1AD8F8F8B91C.jpg"
+        }
+      ],
+      "designation": "National Historic Trail",
+      "parkCode": "elte",
+      "addresses": [
+        {
+          "postalCode": "87501",
+          "city": "Santa Fe",
+          "stateCode": "NM",
+          "line1": "National Trails",
+          "type": "Physical",
+          "line3": "120 South Federal Place",
+          "line2": "El Camino Real de los Tejas National Historic Trail"
+        },
+        {
+          "postalCode": "87504",
+          "city": "Santa Fe",
+          "stateCode": "NM",
+          "line1": "National Trails",
+          "type": "Mailing",
+          "line3": "PO Box 728",
+          "line2": "El Camino Real de los Tejas National Historic Trail"
+        }
+      ],
+      "id": "111711AC-B056-4CCF-B08F-35EE0E313CF4",
+      "fullName": "El Camino Real de los Tejas National Historic Trail",
+      "latitude": ""
+    },
+    {
+      "contacts": {
+        "phoneNumbers": [
+          { "phoneNumber": "5045893882", "description": "", "extension": "", "type": "Voice" },
+          { "phoneNumber": "5045893851", "description": "", "extension": "", "type": "Fax" }
+        ],
+        "emailAddresses": [{ "description": "", "emailAddress": "jela_interpretation@nps.gov" }]
+      },
+      "states": "LA",
+      "longitude": "-90.1402241",
+      "entranceFees": [
+        {
+          "cost": "0.0000",
+          "description": "Admission to park visitor centers is always free. Most park programs are free; any fees are always noted on program descriptions.",
+          "title": "Admission and Program Fees"
+        }
+      ],
+      "directionsInfo": "Jean Lafitte's headquarters and the park's French Quarter Visitor Center is located at 419 Decatur St. in New Orleans. There are five other park sites scattered throughout south Louisiana. For information on all of the park sites and visitor centers, see the Directions URL.",
+      "entrancePasses": [],
+      "directionsUrl": "http://www.nps.gov/jela/planyourvisit/directions.htm",
+      "url": "https://www.nps.gov/jela/index.htm",
+      "weatherInfo": "All temperatures in degrees Fahrenheit. Note that relative humidity, especially in summer months, can reach 90%, so temperatures can feel 10-20 degrees hotter than actual temperature.\nSpring (March, April, May) average high 77, low 61\nSummer (June, July, August) average high 89, low 75\nFall (September, October, November) average high 78, low 64\nWinter (December, January, February) average high 64, low 48",
+      "name": "Jean Lafitte",
+      "operatingHours": [
+        {
+          "exceptions": [],
+          "description": "Each of Jean Lafitte's six sites is open year-round, but each has different operating hours and days. See the specific site(s) you want to visit for operating hours and days information.",
+          "standardHours": {
+            "wednesday": "All Day",
+            "monday": "All Day",
+            "thursday": "All Day",
+            "sunday": "All Day",
+            "tuesday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "name": "Jean Lafitte National Historical Park and Preserve"
+        }
+      ],
+      "latLong": "lat:29.81739855, long:-90.1402241",
+      "description": "In Jean Lafitte's day, silver and gold filled a pirate's treasure chest, but today's treasures are people, places, and memories. Discover New Orleans’ rich cultural mix. Learn Cajun traditions from people who live them. Watch an alligator bask on a bayou’s bank. Walk in the footsteps of the men who fought at 1815’s Battle of New Orleans. Follow the link to discover the treasure of Jean Lafitte.",
+      "images": [
+        {
+          "credit": "NPS Photo",
+          "altText": "Spanish moss hangs from live oak tree",
+          "title": "Barataria Preserve of Jean Lafitte National Historical Park and Preserve",
+          "id": "3936",
+          "caption": "Spanish moss and lush vegetation provide glimpses of Louisiana's wild wetlands at Jean Lafitte's Barataria Preserve.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C845D16-1DD8-B71B-0B04181AABF4F0C1.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "An oak tree arches over a cannon-guarded rampart with historic house and American flag in background",
+          "title": "Chalmete Battlefield at Jean Lafitte National Historical Park and Preserve",
+          "id": "3937",
+          "caption": "Chalmette Battlefield's American rampart and cannons still guard the site of the Battle of New Orleans in 1815.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C845E7E-1DD8-B71B-0BE1AC184B0AF650.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "Setting sun lights up cemetery headstones",
+          "title": "Chalmette National Cemetery at Jean Lafitte National Historical Park and Preserve",
+          "id": "3939",
+          "caption": "Established during the Civil War, Chalmette National Cemetery's 14,000+ headstones pay tribute to those buried there.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C8461CD-1DD8-B71B-0BA0A3EAB3AFD319.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "Visitor center exhibit titled \"Crossroads of Cultures\"",
+          "title": "French Quarter Visitor Center of Jean Lafitte National Historical Park and Preserve",
+          "id": "3949",
+          "caption": "Hundreds of years of history and thousands of people from all over the world have created New Orleans' distinctive cultural mix.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C846B2F-1DD8-B71B-0B8FA8F547ADCE23.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "Model of an early Acadian home sits in a glass case",
+          "title": "Acadian Cultural Center of Jean Lafitte National Historical Park and Preserve",
+          "id": "3950",
+          "caption": "Bringing skills and traditions from Nova Scotia, the Acadian exiles in Louisiana found a new home and a new name---Cajuns.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C846C76-1DD8-B71B-0BCC7D9571EBF0FA.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "Center exhibit with glass display cases and photos",
+          "title": "Prairie Acadian Cultural Center of Jean Lafitte National Historical Park and Preserve",
+          "id": "3951",
+          "caption": "The Acadians (Cajuns) who settled Louisiana's Cajun prairies were cowboys, farmers, and ranchers.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C846DAD-1DD8-B71B-0B32BE43704D6157.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "Exhibit case full of musical instruments",
+          "title": "Wetlands Acadian Cultural Center of Jean Lafitte National Historical Park and Preserve",
+          "id": "3952",
+          "caption": "Acadian (Cajun) music began in cabins and dancehalls and has become famous worldwide.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C846EF3-1DD8-B71B-0B4D8391F7C91BC6.jpg"
+        }
+      ],
+      "designation": "National Historical Park and Preserve",
+      "parkCode": "jela",
+      "addresses": [
+        {
+          "postalCode": "70130",
+          "city": "New Orleans",
+          "stateCode": "LA",
+          "line1": "419 Decatur St",
+          "type": "Physical",
+          "line3": "",
+          "line2": ""
+        },
+        {
+          "postalCode": "70130",
+          "city": "New Orleans",
+          "stateCode": "LA",
+          "line1": "419 Decatur St",
+          "type": "Mailing",
+          "line3": "",
+          "line2": ""
+        }
+      ],
+      "id": "ED57A2B1-2560-471C-82A7-7EF6BC3486F8",
+      "fullName": "Jean Lafitte National Historical Park and Preserve",
+      "latitude": "29.81739855"
+    },
+    {
+      "contacts": {
+        "phoneNumbers": [
+          {
+            "phoneNumber": "5045894841",
+            "description": "For best response, please call during business hours.",
+            "extension": "",
+            "type": "Voice"
+          },
+          { "phoneNumber": "5045894845", "description": "", "extension": "", "type": "Fax" }
+        ],
+        "emailAddresses": [
+          {
+            "description": "Email is generally answered within 48 hours.",
+            "emailAddress": "jon_beebe@nps.gov"
+          }
+        ]
+      },
+      "states": "LA",
+      "longitude": "-90.06749669",
+      "entranceFees": [
+        {
+          "cost": "0.0000",
+          "description": "Admission to park visitor centers is always free. Most park programs are free; any fees are always noted on program descriptions.",
+          "title": "Admission and Program Fees"
+        }
+      ],
+      "directionsInfo": "The park's main visitor center is in New Orleans' French Quarter, near the Mississippi River levee on North Peters Street between Dumaine Street and St. Phillip Street. The park also produces educational concerts at the New Orleans Jazz Museum at 400 Esplanade Avenue.",
+      "entrancePasses": [],
+      "directionsUrl": "http://www.nps.gov/jazz/planyourvisit/directions.htm",
+      "url": "https://www.nps.gov/jazz/index.htm",
+      "weatherInfo": "All temperatures in degrees Fahrenheit. Note that relative humidity, especially in summer months, can reach 90%, so temperatures can feel 10-20 degrees hotter than actual temperature.\nSpring (March, April, May) average high 77, low 61\nSummer (June, July, August) average high 89, low 75\nFall (September, October, November) average high 78, low 64\nWinter (December, January, February) average high 64, low 48",
+      "name": "New Orleans Jazz",
+      "operatingHours": [
+        {
+          "exceptions": [],
+          "description": "The main visitor center for the park is located at 916 North Peters Street in New Orleans. The visitor center includes exhibits, a bookstore, and a performance area for musical performances, talks, and programs. The center is closed on Mardi Gras and on federal holidays.",
+          "standardHours": {
+            "wednesday": "9:00AM - 4:30PM",
+            "monday": "Closed",
+            "thursday": "9:00AM - 4:30PM",
+            "sunday": "Closed",
+            "tuesday": "9:00AM - 4:30PM",
+            "friday": "9:00AM - 4:30PM",
+            "saturday": "9:00AM - 4:30PM"
+          },
+          "name": "New Orleans Jazz National Historical Park Visitors Center"
+        }
+      ],
+      "latLong": "lat:29.96303129, long:-90.06749669",
+      "description": "Only in New Orleans could there be a National Park for jazz! Drop by our visitor center at 916 North Peters St. to inquire about musical events around town. In the mood for a world class musical experience? Attend a jazz concert or ranger performance at the state of the New Orleans Jazz Museum.",
+      "images": [
+        {
+          "credit": "NPS Photo",
+          "altText": "Exhibit titled \"What Is New Orleans Jazz?\"",
+          "title": "Visitor Center Exhibit at New Orleans Jazz National Historical Park",
+          "id": "4502",
+          "caption": "\"What is New Orleans Jazz?\" A visit to the park's main visitor center at 916 North Peters Street will answer the question.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C87BF6D-1DD8-B71B-0BE7901DF3FCBDE9.jpg"
+        },
+        {
+          "credit": "NPS Photo / Elizabeth Dupree",
+          "altText": "Kids and adults playing instruments on a stage",
+          "title": "Visitor Center Concert at New Orleans Jazz National Historical Park",
+          "id": "4503",
+          "caption": "Passing jazz traditions from one generation to the next is an important part of the park's mission---and great listening too!",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C87C0C3-1DD8-B71B-0BEF50BA9C9BFB5D.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "Singer with jazz band, including park rangers",
+          "title": "US Mint Concert by New Orleans Jazz National Historical Park",
+          "id": "4504",
+          "caption": "The park's state-of-the-art concert space at the Old US Mint is the perfect place to enjoy some jazz.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C87C20C-1DD8-B71B-0B53480C74A5F56F.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "Rangers and others sing and play on a stage",
+          "title": "US Mint Voting Rights Act Program at New Orleans Jazz National Historical Park",
+          "id": "4505",
+          "caption": "Programs like this celebration of the Voting Rights Act bring together history, culture, and music.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C87C3B6-1DD8-B71B-0B91F46410CC1CB1.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "A young brass band musician plays a trumpet",
+          "title": "Community Events by New Orleans Jazz National Historical Park",
+          "id": "4506",
+          "caption": "The park works with local partners to share jazz at community events, festivals, and other venues.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C87C505-1DD8-B71B-0BE34A8A361477FB.jpg"
+        }
+      ],
+      "designation": "National Historical Park",
+      "parkCode": "jazz",
+      "addresses": [
+        {
+          "postalCode": "70116",
+          "city": "New Orleans",
+          "stateCode": "LA",
+          "line1": "916 North Peters St",
+          "type": "Mailing",
+          "line3": "",
+          "line2": ""
+        },
+        {
+          "postalCode": "70116",
+          "city": "New Orleans",
+          "stateCode": "LA",
+          "line1": "916 North Peters St",
+          "type": "Physical",
+          "line3": "",
+          "line2": ""
+        }
+      ],
+      "id": "CB014DE3-3483-4E36-BC35-3CC7E9F60529",
+      "fullName": "New Orleans Jazz National Historical Park",
+      "latitude": "29.96303129"
+    },
+    {
+      "contacts": {
+        "phoneNumbers": [
+          { "phoneNumber": "3189265492", "description": "", "extension": "", "type": "Voice" },
+          { "phoneNumber": "18889265492", "description": "", "extension": "", "type": "TTY" }
+        ],
+        "emailAddresses": [{ "description": "", "emailAddress": "povertypoint@crt.la.gov" }]
+      },
+      "states": "LA",
+      "longitude": "-91.40829834",
+      "entranceFees": [
+        {
+          "cost": "4.0000",
+          "description": "$4 per person;\nFree for seniors (62 and over) & children 12 and under.\nGroups are asked to call in advance.",
+          "title": "Entrance Fees"
+        }
+      ],
+      "directionsInfo": "By car, from Interstate 20, take the Delhi exit and travel north on LA 17, east on LA 134 and north on LA 577.",
+      "entrancePasses": [],
+      "directionsUrl": "http://www.nps.gov/popo/planyourvisit/directions.htm",
+      "url": "https://www.nps.gov/popo/index.htm",
+      "weatherInfo": "Summers are sunny, hot, and humid. Winters tend to be mild; however, humid rainy periods occur throughout the year. Sudden and severe thunderstorms are common, so stay alert to weather forecasts. Check with rangers at the Visitor Center and/or USS Cairo Museum for updates on weather patterns.\n\nWear comfortable sportswear appropriate for the season, with walking or hiking shoes recommended.",
+      "name": "Poverty Point",
+      "operatingHours": [
+        {
+          "exceptions": [],
+          "description": "Poverty Point National Monument is managed by the state of Louisiana.\n\nClosed on Thanksgiving Day, Christmas Day and New Year's Day.",
+          "standardHours": {
+            "wednesday": "9:00AM - 5:00PM",
+            "monday": "9:00AM - 5:00PM",
+            "thursday": "9:00AM - 5:00PM",
+            "sunday": "9:00AM - 5:00PM",
+            "tuesday": "9:00AM - 5:00PM",
+            "friday": "9:00AM - 5:00PM",
+            "saturday": "9:00AM - 5:00PM"
+          },
+          "name": "Poverty Point World Heritage Site"
+        }
+      ],
+      "latLong": "lat:32.6424361, long:-91.40829834",
+      "description": "Now a nearly forgotten culture, Poverty Point at its peak 3,000 years ago was part of an enormous trading network that stretched for hundreds of miles across the continent. It was - and is - also an engineering marvel, the product of five million hours of labor. Explore the culture of a highly sophisticated people who left behind one of North America’s most important archeological sites.",
+      "images": [
+        {
+          "credit": "Bart Everson",
+          "altText": "A grassy green mound.",
+          "title": "Bird Mound",
+          "id": "4727",
+          "caption": "A grassy green mound.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/093C6AE3-1DD8-B71B-0BF4825496F87868.jpg"
+        },
+        {
+          "credit": "Bert Everson",
+          "altText": "Bird Mound - a grassy green mound.",
+          "title": "Bird Mound",
+          "id": "4728",
+          "caption": "Bird Mound - a grassy green mound.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/09EBA126-1DD8-B71B-0B199FFFD36CD0FD.jpg"
+        },
+        {
+          "credit": "Bert Everson",
+          "altText": "Bird Mound - a grassy green mound.",
+          "title": "Bird Mound",
+          "id": "4731",
+          "caption": "Bird Mound - a grassy green mound.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/09EBA126-1DD8-B71B-0B199FFFD36CD0FD.jpg"
+        }
+      ],
+      "designation": "National Monument",
+      "parkCode": "popo",
+      "addresses": [
+        {
+          "postalCode": "71266",
+          "city": "Pioneer",
+          "stateCode": "LA",
+          "line1": "6859 Hwy. 577",
+          "type": "Mailing",
+          "line3": "",
+          "line2": ""
+        },
+        {
+          "postalCode": "71266",
+          "city": "Pioneer",
+          "stateCode": "LA",
+          "line1": "6859 Hwy. 577",
+          "type": "Physical",
+          "line3": "",
+          "line2": ""
+        }
+      ],
+      "id": "DC9185D6-CCA9-4F40-AE53-5D77DE35E202",
+      "fullName": "Poverty Point National Monument",
+      "latitude": "32.6424361"
+    },
+    {
+      "contacts": {
+        "phoneNumbers": [
+          { "phoneNumber": "6016360583", "description": "", "extension": "", "type": "Voice" },
+          { "phoneNumber": "6016369497", "description": "", "extension": "", "type": "Fax" }
+        ],
+        "emailAddresses": [{ "description": "", "emailAddress": "vick_interpretation@nps.gov" }]
+      },
+      "states": "MS,LA",
+      "longitude": "-90.85030186",
+      "entranceFees": [
+        { "cost": "20.0000", "description": "Valid for 7 days", "title": "Per Vehicle" },
+        {
+          "cost": "10.0000",
+          "description": "Pedestrian, biker, jogger, etc. that walks into the park.  Does not apply for individuals driving in to walk the tour road.",
+          "title": "Per Individual"
+        },
+        {
+          "cost": "25.0000",
+          "description": "(provided by non-NPS charter tour companies)\n1-6 Person Capacity",
+          "title": "Commercial Tours"
+        },
+        {
+          "cost": "40.0000",
+          "description": "(provided by non-NPS charter tour companies) -\n\n7-25 Person Capacity",
+          "title": "Commercial Tours"
+        },
+        {
+          "cost": "100.0000",
+          "description": "(provided by non-NPS charter tour companies) -\n\nOver 25 Person Capacity",
+          "title": "Commercial Tours"
+        },
+        { "cost": "15.0000", "description": "Per Motorcycle", "title": "Motorcycle" }
+      ],
+      "directionsInfo": "Plane —\nClosest commercial airport:\nJackson, MS, 50 miles to the east. \n\nCar —\nDirections to Vicksburg:\nFrom the east — Take Interstate 20 west to Vicksburg, MS. Use exit ramp 4B. Follow Clay Street (US-80) west 0.25 miles to park entrance.\n\nFrom the north — Take Interstate 55 south to Jackson, MS. To save time, use Interstate 220 bypass on west side of Jackson. Take Interstate 20 west to Vicksburg approximately 40 miles. Use exit ramp 4B. Follow Clay Street (US-80) west 0.25 miles to park entrance.",
+      "entrancePasses": [
+        {
+          "cost": "35.0000",
+          "description": "Valid for one year from date of purchase; does not offer discounts at the cooperating association bookstores.",
+          "title": "Vicksburg Annual Pass"
+        }
+      ],
+      "directionsUrl": "http://www.nps.gov/vick/planyourvisit/directions.htm",
+      "url": "https://www.nps.gov/vick/index.htm",
+      "weatherInfo": "Spring and fall in Vicksburg are always very pleasant with cool nights and warm, sunny days with temperatures ranging from lows of 40-50 degrees to highs of 70 degrees. Winter weather in Mississippi is usually mild except for occasional cold air invasions, which normally last only a couple of days. Temperatures range from lows of 30 degrees to highs of 50 degrees. In the summer, weather is consistently hot, beginning in the low 70's and climbing to highs ranging from 80-90 degrees in the afternoon.",
+      "name": "Vicksburg",
+      "operatingHours": [
+        {
+          "exceptions": [
+            {
+              "exceptionHours": {
+                "wednesday": "Closed",
+                "monday": "Closed",
+                "thursday": "Closed",
+                "sunday": "Closed",
+                "tuesday": "Closed",
+                "friday": "Closed",
+                "saturday": "Closed"
+              },
+              "startDate": "2018-11-22",
+              "name": "Thanksgiving",
+              "endDate": "2018-11-22"
+            },
+            {
+              "exceptionHours": {
+                "wednesday": "Closed",
+                "monday": "Closed",
+                "thursday": "Closed",
+                "sunday": "Closed",
+                "tuesday": "Closed",
+                "friday": "Closed",
+                "saturday": "Closed"
+              },
+              "startDate": "2018-12-25",
+              "name": "Christmas Day",
+              "endDate": "2018-12-25"
+            },
+            {
+              "exceptionHours": {
+                "wednesday": "8:30AM - 4:30PM",
+                "monday": "8:30AM - 4:30PM",
+                "thursday": "8:30AM - 4:30PM",
+                "sunday": "8:30AM - 4:30PM",
+                "tuesday": "8:30AM - 4:30PM",
+                "friday": "8:30AM - 4:30PM",
+                "saturday": "8:30AM - 4:30PM"
+              },
+              "startDate": "2017-11-01",
+              "name": "Winter Hours",
+              "endDate": "2017-03-31"
+            }
+          ],
+          "description": "Visitor Center is open daily, except Thanksgiving, Christmas, and New Years Day.\n\nFrom April 1 thru October 31, the building is open 8:00am-5:00pm.  From November 1 thru March 31, the building is open 8:30am-4:30pm.",
+          "standardHours": {
+            "wednesday": "8:00AM - 5:00PM",
+            "monday": "8:00AM - 5:00PM",
+            "thursday": "8:00AM - 5:00PM",
+            "sunday": "8:00AM - 5:00PM",
+            "tuesday": "8:00AM - 5:00PM",
+            "friday": "8:00AM - 5:00PM",
+            "saturday": "8:00AM - 5:00PM"
+          },
+          "name": "Visitor Center"
+        },
+        {
+          "exceptions": [
+            {
+              "exceptionHours": {},
+              "startDate": "2018-11-22",
+              "name": "Thanksgiving",
+              "endDate": "2018-11-22"
+            },
+            {
+              "exceptionHours": {},
+              "startDate": "2018-12-25",
+              "name": "Christmas",
+              "endDate": "2018-12-25"
+            },
+            {
+              "exceptionHours": {},
+              "startDate": "2018-01-01",
+              "name": "New Years Day",
+              "endDate": "2018-01-01"
+            }
+          ],
+          "description": "Open Daily",
+          "standardHours": {
+            "wednesday": "8:30AM - 5:00PM",
+            "monday": "8:30AM - 5:00PM",
+            "thursday": "8:30AM - 5:00PM",
+            "sunday": "8:30AM - 5:00PM",
+            "tuesday": "8:30AM - 5:00PM",
+            "friday": "8:30AM - 5:00PM",
+            "saturday": "8:30AM - 5:00PM"
+          },
+          "name": "USS Cairo Museum"
+        },
+        {
+          "exceptions": [],
+          "description": "Park Roads are open to pedesterians and bicyclists from sunrise to sunset.  Roads are open to vehicles from 8am-5pm.",
+          "standardHours": {
+            "wednesday": "Sunrise to Sunset",
+            "monday": "Sunrise to Sunset",
+            "thursday": "Sunrise to Sunset",
+            "sunday": "Sunrise to Sunset",
+            "tuesday": "Sunrise to Sunset",
+            "friday": "Sunrise to Sunset",
+            "saturday": "Sunrise to Sunset"
+          },
+          "name": "Vicksburg National Military Park Grounds"
+        },
+        {
+          "exceptions": [],
+          "description": "Tour Road is open to vehicles from 8am-5pm.  Last vehicle entry on the tour road is 4:45pm.  Tour Road closed to vehicles on Thanksgiving, Christmas, and New Years Day.",
+          "standardHours": {
+            "wednesday": "8:00AM - 5:00PM",
+            "monday": "8:00AM - 5:00PM",
+            "thursday": "8:00AM - 5:00PM",
+            "sunday": "8:00AM - 5:00PM",
+            "tuesday": "8:00AM - 5:00PM",
+            "friday": "8:00AM - 5:00PM",
+            "saturday": "8:00AM - 5:00PM"
+          },
+          "name": "Vehicle Access to Tour Road"
+        }
+      ],
+      "latLong": "lat:32.3621286, long:-90.85030186",
+      "description": "To Confederate President Jefferson Davis, Vicksburg was the \"nailhead that holds the South's two halves together.\"  President Abraham Lincoln remarked \"Vicksburg is the key\" to victory, and could be the north's lifeline into the south.  \n\nAs the federals closed in on the Fortress City, they were met by a ring of forts with over 170 cannon. The resulting battle would determine the war's outcome.",
+      "images": [
+        {
+          "credit": "NPS Photo",
+          "altText": "Union cannon aimed at Confederate lines",
+          "title": "Union Cannon",
+          "id": "254",
+          "caption": "The Union artillery played a major role in the outcome of the Vicksburg Campaign.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C79F947-1DD8-B71B-0B6F394F6E31CAE2.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "a headstone is seen in a tree",
+          "title": "Headstone in Tree",
+          "id": "256",
+          "caption": "A headstone in the Vicksburg National Cemetery rest beside a tree.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C79FA38-1DD8-B71B-0B8150B72708AE31.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "Stars behind the Illinois State Memorial",
+          "title": "Illinois State Memorial",
+          "id": "258",
+          "caption": "Stars gleam behind the Illinois State Memorial.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C79FC6D-1DD8-B71B-0B666D4D8ACAA98D.jpg"
+        },
+        {
+          "credit": "NPS Photo",
+          "altText": "Roses in bloom in front of the Shirley House",
+          "title": "The Shirley House",
+          "id": "260",
+          "caption": "Roses in bloom in front of the Shirley House, the only remaining Civil War structure in the park.",
+          "url": "https://www.nps.gov/common/uploads/structured_data/3C79FEFF-1DD8-B71B-0B68A290E3DBE016.jpg"
+        }
+      ],
+      "designation": "National Military Park",
+      "parkCode": "vick",
+      "addresses": [
+        {
+          "postalCode": "39183",
+          "city": "Vicksburg",
+          "stateCode": "MS",
+          "line1": "3201 Clay Street",
+          "type": "Mailing",
+          "line3": "",
+          "line2": ""
+        },
+        {
+          "postalCode": "39183",
+          "city": "Vicksburg",
+          "stateCode": "MS",
+          "line1": "3201 Clay Street",
+          "type": "Physical",
+          "line3": "",
+          "line2": ""
+        }
+      ],
+      "id": "45408368-12DB-4950-92A8-E26AC85E3724",
+      "fullName": "Vicksburg National Military Park",
+      "latitude": "32.3621286"
+    }
+  ],
+  "limit": "50",
+  "start": "1"
+}

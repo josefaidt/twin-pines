@@ -1,4 +1,5 @@
 <script>
+  import DataStore from '../../helpers/data.store.js'
   import states from '../../data/states-hash.json'
   let stateValue = null
   let _error = false
@@ -7,11 +8,20 @@
   function findState(input) {
     for (let [shortcode, name] of Object.entries(states)) {
       let r = new RegExp(input, 'i')
-      if (r.test(shortcode) || r.test(name)) {
-        selected = new Map([['shortcode', shortcode], ['name', name]])
-        return true
+      if (input.length === 2) {
+        if (r.test(shortcode)) {
+          console.log(r.test(shortcode), 'found by shortcode', shortcode)
+          selected = new Map([['shortcode', shortcode], ['name', name]])
+          return true
+        }
       } else {
-        return false
+        console.log(r.test(name), 'found by name', name)
+        if (r.test(shortcode) || r.test(name)) {
+          selected = new Map([['shortcode', shortcode], ['name', name]])
+          return true
+        } else {
+          // do nothing
+        }
       }
     }
   }
@@ -33,12 +43,10 @@
       if (!findState(stateValue)) {
         _error = true
       } else {
-        console.log('STATE VALUE', selected)
-        console.log('ERROR', _error)
         if (findState(stateValue)) {
-          const res = await fetch(`/api/parks?stateCode=${selected.get('shortname')}`)
+          const res = await fetch(`/api/mock/parks?stateCode=${selected.get('shortcode')}`)
           const data = await res.json()
-          console.log('GOT DATA', data)
+          DataStore.update(d => ({ ...d, ...data }))
         }
       }
     } else {
