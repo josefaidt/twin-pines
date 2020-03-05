@@ -3,6 +3,7 @@ import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'
+import svg from 'rollup-plugin-svg-import'
 import json from '@rollup/plugin-json'
 
 const production = !process.env.ROLLUP_WATCH
@@ -26,6 +27,7 @@ export default {
       },
     }),
     json(),
+    svg({ stringify: true }),
 
     // If you have external dependencies installed from
     // npm, you'll most likely need these plugins. In

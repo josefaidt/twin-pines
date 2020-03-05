@@ -51,7 +51,6 @@
       }
     } else {
       _error = true
-      console.log('ERROR')
     }
   }
 </script>

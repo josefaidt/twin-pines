@@ -96,10 +96,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@josefaidt/eslint-config@^0.1.11":
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/@josefaidt/eslint-config/-/eslint-config-0.1.12.tgz#409bc96b6356f4ae4e17d1b486c896e4ed2e4e0b"
-  integrity sha512-tNCvbZmfuP/iGkgctZH63eQEMZTChkzKSlTKupHm+jbYhZiEbIeFoV2dRBkA6CAWbIiTslN9o09AHeTod78qqA==
+"@josefaidt/eslint-config@^0.1.14":
+  version "0.1.14"
+  resolved "https://registry.yarnpkg.com/@josefaidt/eslint-config/-/eslint-config-0.1.14.tgz#74cf25320f450b6e669e9d27d20b452cb68194d5"
+  integrity sha512-KHOsD5MpE8c2FWgjDKeRxSu61nCcP/zEKXIbl98kPFcCbwo1S9JneO2LaWVa2XzZ6mt6UiGytvwQ5FuVYazSYw==
   dependencies:
     babel-eslint "^10.1.0"
     eslint-config-prettier "^6.10.0"
@@ -571,6 +571,11 @@ cross-spawn@^6.0.5:
     semver "^5.5.0"
     shebang-command "^1.2.0"
     which "^1.2.9"
+
+css.gg@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/css.gg/-/css.gg-1.0.6.tgz#b8d13288a22e358265676a375ab89425411daaa2"
+  integrity sha512-Bv8GTVkeuSqqkgdCJ+tJopRxf/mp/wP6hkL13BdCSs3FadD0GWyU3gKdjuaaFkfxkgYK+GhjSX3EA+cXLHBFpA==
 
 damerau-levenshtein@^1.0.4:
   version "1.0.6"
@@ -2191,6 +2196,13 @@ rollup-plugin-svelte@^5.1.1:
     require-relative "^0.8.7"
     rollup-pluginutils "^2.3.3"
     sourcemap-codec "^1.4.4"
+
+rollup-plugin-svg-import@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-svg-import/-/rollup-plugin-svg-import-1.4.0.tgz#2e06e8b73c631710bf5c0a3a1ac21146dafe5a4e"
+  integrity sha512-R5h4t+C6BbgMTg7LMjA+fMx5FINxiQTtQZ3oobAhnwyq/jB5GYHvHun88JkK0LXB/t+5Fx51psA7BmwA9eMUMw==
+  dependencies:
+    "@rollup/pluginutils" "^3.0.4"
 
 rollup-plugin-terser@^5.2.0:
   version "5.2.0"
