@@ -27,6 +27,9 @@
 			_geoCalled = true
 			const res = await fetch(`/api/service/reverse-geocode?longitude=${g.longitude}&latitude=${g.latitude}`)
 			const data = await res.json()
+			if (data.error) {
+				console.warn('Reverse Geocode has failed')
+			}
 			locationData = data
 		}
 	})

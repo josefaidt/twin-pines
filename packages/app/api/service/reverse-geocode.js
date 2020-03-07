@@ -8,5 +8,8 @@ module.exports = async (req, res) => {
   if (data.error) {
     return res.status(400).json(data)
   }
+  if (req.query.stateOnly) {
+    return res.json({ state: data.address.state })
+  }
   return res.json(data)
 }
