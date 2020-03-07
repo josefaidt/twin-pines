@@ -1,13 +1,17 @@
 <script>
+  import { getContext } from 'svelte'
   import { ThemeToggle } from 'svelte-themer'
   import logo from '../img/logo_theme.svg'
-  export let title = 'Twin Pines'
+  let title = 'Twin Pines'
+
+  const auth = getContext('auth')
 </script>
 
 <header>
   <!-- <h1>{title}</h1> -->
   {@html logo}
   <ThemeToggle />
+  <button on:click={auth.login()}>Login</button>
   <!-- <nav>
     <a href="#">Home</a>
   </nav> -->

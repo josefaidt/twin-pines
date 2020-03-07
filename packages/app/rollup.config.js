@@ -1,10 +1,12 @@
 import svelte from 'rollup-plugin-svelte'
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
+import replace from '@rollup/plugin-replace'
 import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'
 import svg from 'rollup-plugin-svg-import'
 import json from '@rollup/plugin-json'
+import postcss from 'rollup-plugin-postcss'
 
 const production = !process.env.ROLLUP_WATCH
 
@@ -28,6 +30,16 @@ export default {
     }),
     json(),
     svg({ stringify: true }),
+    postcss({
+      extract: false,
+      modules: true,
+      use: ['sass'],
+    }),
+    replace({
+      process: JSON.stringify({
+        env: process.env,
+      }),
+    }),
 
     // If you have external dependencies installed from
     // npm, you'll most likely need these plugins. In

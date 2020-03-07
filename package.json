@@ -3,7 +3,8 @@
   "workspaces": ["packages/*"],
   "scripts": {
     "start": "yarn app start",
-    "develop": "yarn app develop",
+    "build": "yarn app build",
+    "dev": "yarn app dev",
     "app": "yarn workspace app run"
   },
   "devDependencies": {

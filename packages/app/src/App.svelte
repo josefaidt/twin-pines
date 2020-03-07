@@ -4,6 +4,9 @@
 	import DataStore from './helpers/data.store.js'
 	import GeoStore from './helpers/geo.store.js'
 	import GeoContext from './helpers/GeoContext.svelte'
+	import AuthContext from './helpers/AuthContext.svelte'
+	import Settings from './helpers/settings.store.js'
+	import SettingsContext from './helpers/SettingsContext.svelte'
 	import Header from './components/Header.svelte'
 	import Footer from './components/Footer.svelte'
 	import DataDump from './components/DataDump.svelte'
@@ -37,19 +40,25 @@
 	onDestroy(() => unsubscribe() && unsubscribeFromGeo())
 </script>
 
-<GeoContext />
-<ThemeWrapper storageKey="twin-pines__theme">
-	<Header />
-	<main>
-		<Form />
-		<div class="parks">
-			{#each parkData.data as park}
-				<ParkCard parkData={park} />
-			{/each}
-		</div>
-	</main>
-	<Footer />
-</ThemeWrapper>
+<AuthContext>
+	<SettingsContext>
+		{#if $Settings.geo}
+			<GeoContext />
+		{/if}
+		<ThemeWrapper storageKey="twin-pines__theme">
+			<Header />
+			<main>
+				<Form />
+				<div class="parks">
+					{#each parkData.data as park}
+						<ParkCard parkData={park} />
+					{/each}
+				</div>
+			</main>
+			<Footer />
+		</ThemeWrapper>
+	</SettingsContext>
+</AuthContext>
 
 <style>
 	:global(body) {
