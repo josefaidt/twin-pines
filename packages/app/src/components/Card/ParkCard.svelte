@@ -8,6 +8,9 @@
   <header>
     <h2>{parkData.fullName}</h2>
   </header>
+  <section>
+    <p>{parkData.description}</p>
+  </section>
   <div class="tp--card--park-states__container">
   {#each parkData.states.split(',') as state}
     <span>{state}</span>

@@ -3,6 +3,7 @@
   "version": 2,
   "env": {
     "NPS_API_URL": "https://developer.nps.gov/api/v1",
-    "NPS_API_KEY": "@nps_api_key"
+    "NPS_API_KEY": "@nps_api_key",
+    "LOCATIONIQ_API_KEY": "@locationiq_api_key"
   }
 }

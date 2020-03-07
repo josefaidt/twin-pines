@@ -1,4 +1,4 @@
-const fetch = require('isomorphic-unfetch')
+const fetch = require('node-fetch')
 
 module.exports = async (req, res) => {
   let url = `${process.env.NPS_API_URL}/parks`

@@ -17,14 +17,14 @@
     "rollup": "^1.32.0",
     "rollup-plugin-livereload": "^1.0.4",
     "rollup-plugin-svelte": "^5.1.1",
-    "rollup-plugin-terser": "^5.2.0",
     "rollup-plugin-svg-import": "^1.4.0",
-    "svelte": "^3.19.1",
+    "rollup-plugin-terser": "^5.2.0",
+    "svelte": "^3.19.2",
     "svelte-themer": "^0.1.4"
   },
   "dependencies": {
-    "isomorphic-fetch": "^2.2.1",
     "isomorphic-unfetch": "^3.0.0",
+    "node-fetch": "^2.6.0",
     "sirv-cli": "^0.4.5"
   },
   "license": "MIT"

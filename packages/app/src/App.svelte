@@ -3,6 +3,7 @@
 	import { ThemeWrapper } from 'svelte-themer'
 	import DataStore from './helpers/data.store.js'
 	import GeoStore from './helpers/geo.store.js'
+	import GeoContext from './helpers/GeoContext.svelte'
 	import Header from './components/Header.svelte'
 	import Footer from './components/Footer.svelte'
 	import DataDump from './components/DataDump.svelte'
@@ -11,40 +12,32 @@
 	let parkData = {
 		data: []
 	}
-	let _geoWatch
+	let locationData = {}
 
-	onMount(async () => {
-		if (navigator.geolocation) {
-			const setGeo = p => GeoStore.update(g => 
-				({ ...g, latitude: p.coords.latitude, longitude: p.coords.longitude }))
-			const settings = {
-				enableHighAccuracy: true,
-				timeout: 10000,
-				maximumAge: Infinity,
-			}
-			const _geoWatch = navigator.geolocation.watchPosition(setGeo, console.error, settings)
-		} else {
-			GeoStore.set(false)
-		}
-	})
 	const unsubscribe = DataStore.subscribe(d => {
 		if (d.data) {
 			parkData.data = d.data
 		}
 	})
 
-	onDestroy(() => {
-		unsubscribe()
-		if (_geoWatch) {
-			navigator.geolocation.clearWatch(_geoWatch)
+	// prevent geo multiple calls
+	let _geoCalled = false
+	const unsubscribeFromGeo = GeoStore.subscribe(async g => {
+		if (g.longitude && g.latitude && !_geoCalled) {
+			_geoCalled = true
+			const res = await fetch(`/api/service/reverse-geocode?longitude=${g.longitude}&latitude=${g.latitude}`)
+			const data = await res.json()
+			locationData = data
 		}
 	})
+
+	onDestroy(() => unsubscribe() && unsubscribeFromGeo())
 </script>
 
+<GeoContext />
 <ThemeWrapper storageKey="twin-pines__theme">
 	<Header />
 	<main>
-		<pre>{JSON.stringify($GeoStore, null, 2)}</pre>
 		<Form />
 		<div class="parks">
 			{#each parkData.data as park}
@@ -58,12 +51,14 @@
 <style>
 	:global(body) {
 		color: var(--theme-text);
+		position: relative;
 	}
 	main {
 		text-align: center;
 		padding: 1em;
 		max-width: 240px;
 		margin: 0 auto;
+		margin-bottom: 3rem;
 
 		display: grid;
 		grid-auto-flow: row;
