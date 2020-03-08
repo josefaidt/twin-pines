@@ -1,3 +1,4 @@
+import path from 'path'
 import svelte from 'rollup-plugin-svelte'
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
@@ -9,6 +10,10 @@ import json from '@rollup/plugin-json'
 import postcss from 'rollup-plugin-postcss'
 
 const production = !process.env.ROLLUP_WATCH
+
+if (!production) {
+  require('dotenv').config({ path: path.join(__dirname, '../../.env') })
+}
 
 export default {
   input: 'src/main.js',

@@ -1,33 +1,40 @@
 <script>
   import { onMount, setContext, getContext } from 'svelte'
-  import { writable, readable } from 'svelte/store'
-  import createAuth0Client from '@auth0/auth0-spa-js'
-  // const _auth = {
-  //   login: async () => await $Auth.loginWithRedirect({
-  //           redirect_uri: window.location.origin
-  //         }),
-  // }
+  import { createAuth } from './auth.store';
 
-  const setup = async set => {
-    set(
-      await createAuth0Client({
-        domain: process.env.AUTH0_DOMAIN,
-        client_id: process.env.AUTH0_CLIENT_ID,
-        redirect_uri: window.location.origin,
-      })
-    )
-    return () => {}
-  }
+  // Go to Auth0 to get the values and set everything up.
+  // Make sure all callback urls are set correctly.
+  const config = {
+    domain: process.env.AUTH0_DOMAIN,
+    client_id: process.env.AUTH0_CLIENT_ID,
+    // audience: 'https://twin-pines.now.sh'
+  };
 
-  let authState = readable(null, setup)
-  // onMount(async () => {})
-  
-  setContext('auth', {
-    Auth: $authState,
-    login: async () => {}
-  })
+  const {
+    isLoading,
+    isAuthenticated,
+    login,
+    logout,
+    authToken,
+    authError,
+    userInfo
+  } = createAuth(config);
+
+  $: state = {
+    isLoading: $isLoading,
+    isAuthenticated: $isAuthenticated,
+    authError: $authError,
+    userInfo: $userInfo ? $userInfo.name : null,
+    authToken: $authToken.slice(0, 20)
+  };
 </script>
 
+{#if $isAuthenticated}
+  <button on:click={() => logout()}>Logout</button>
+{:else}
+  <button on:click={() => login()}>Login</button>
+{/if}
+<pre>{JSON.stringify(state, null, 2)}</pre>
 <slot>
   <!-- content -->
 </slot>

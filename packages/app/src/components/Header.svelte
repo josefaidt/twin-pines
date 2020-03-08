@@ -4,14 +4,20 @@
   import logo from '../img/logo_theme.svg'
   let title = 'Twin Pines'
 
-  const auth = getContext('auth')
+  // const { Auth } = getContext('auth')
+  // let login = async () => await $Auth.loginWithRedirect({
+  //   redirect_uri: window.location.origin 
+  // })
+  // console.log('login', $Auth)
 </script>
 
 <header>
   <!-- <h1>{title}</h1> -->
   {@html logo}
-  <ThemeToggle />
-  <button on:click={auth.login()}>Login</button>
+  <nav>
+    <ThemeToggle />
+    <!-- <button on:click={login()}>Login</button> -->
+  </nav>
   <!-- <nav>
     <a href="#">Home</a>
   </nav> -->
