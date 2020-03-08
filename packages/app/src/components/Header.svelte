@@ -4,7 +4,7 @@
   import logo from '../img/logo_theme.svg'
   let title = 'Twin Pines'
 
-  // const { Auth } = getContext('auth')
+  const { login, logout, isAuthenticated } = getContext('auth')
   // let login = async () => await $Auth.loginWithRedirect({
   //   redirect_uri: window.location.origin 
   // })
@@ -16,6 +16,11 @@
   {@html logo}
   <nav>
     <ThemeToggle />
+    {#if $isAuthenticated}
+      <button on:click={() => logout()}>Logout</button>
+    {:else}
+      <button on:click={() => login()}>Login</button>
+    {/if}
     <!-- <button on:click={login()}>Login</button> -->
   </nav>
   <!-- <nav>

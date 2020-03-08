@@ -27,13 +27,10 @@
     userInfo: $userInfo ? $userInfo.name : null,
     authToken: $authToken.slice(0, 20)
   };
+
+  $: setContext('auth', { login, logout, isAuthenticated })
 </script>
 
-{#if $isAuthenticated}
-  <button on:click={() => logout()}>Logout</button>
-{:else}
-  <button on:click={() => login()}>Login</button>
-{/if}
 <pre>{JSON.stringify(state, null, 2)}</pre>
 <slot>
   <!-- content -->
