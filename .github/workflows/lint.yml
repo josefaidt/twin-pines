@@ -1,4 +1,5 @@
 name: Lint Check
+
 on:
   pull_request:
     branches:
@@ -11,10 +12,10 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node_version }}
+    - name: Use Node.js 10
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node_version }}
+        node-version: 10
     - name: npm install, lint
       run: |
         npm install
