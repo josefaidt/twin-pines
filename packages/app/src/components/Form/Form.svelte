@@ -28,7 +28,7 @@
 
   function validate(e) {
     const { state } = e.target
-    if (!stateValue || stateValue.length === 0 || typeof stateValue !== 'string') {
+    if (!stateValue || stateValue.trim().length === 0 || typeof stateValue !== 'string') {
       _error = true
       return false
     } else {
@@ -43,11 +43,9 @@
       if (!findState(stateValue)) {
         _error = true
       } else {
-        if (findState(stateValue)) {
-          const res = await fetch(`/api/mock/parks?stateCode=${selected.get('shortcode')}`)
-          const data = await res.json()
-          DataStore.update(d => ({ ...d, ...data }))
-        }
+        const res = await fetch(`/api/mock/parks?stateCode=${selected.get('shortcode')}`)
+        const data = await res.json()
+        DataStore.update(d => ({ ...d, ...data }))
       }
     } else {
       _error = true
