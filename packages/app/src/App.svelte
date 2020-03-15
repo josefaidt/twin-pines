@@ -4,6 +4,7 @@
 	import DataStore from './helpers/data.store.js'
 	import GeoStore from './helpers/geo.store.js'
 	import GeoContext from './helpers/GeoContext.svelte'
+	import CacheDB from './helpers/CacheDB.svelte'
 	import AuthContext from './helpers/AuthContext.svelte'
 	import Settings from './helpers/settings.store.js'
 	import SettingsContext from './helpers/SettingsContext.svelte'
@@ -12,6 +13,7 @@
 	import DataDump from './components/DataDump.svelte'
 	import ParkCard from './components/Card/ParkCard.svelte'
 	import Form from './components/Form/Form.svelte'
+	import { themes } from './themes.js'
 	let parkData = {
 		data: []
 	}
@@ -40,25 +42,27 @@
 	onDestroy(() => unsubscribe() && unsubscribeFromGeo())
 </script>
 
-<AuthContext>
-	<SettingsContext>
-		{#if $Settings.geo}
-			<GeoContext />
-		{/if}
-		<ThemeWrapper storageKey="twin-pines__theme">
-			<Header />
-			<main>
-				<Form />
-				<div class="parks">
-					{#each parkData.data as park}
-						<ParkCard parkData={park} />
-					{/each}
-				</div>
-			</main>
-			<Footer />
-		</ThemeWrapper>
-	</SettingsContext>
-</AuthContext>
+<CacheDB>
+	<AuthContext>
+		<SettingsContext>
+			{#if $Settings.geo}
+				<GeoContext />
+			{/if}
+			<ThemeWrapper themes={themes} storageKey="twin-pines__theme">
+				<Header />
+				<main>
+					<Form />
+					<div class="parks">
+						{#each parkData.data as park}
+							<ParkCard parkData={park} />
+						{/each}
+					</div>
+				</main>
+				<Footer />
+			</ThemeWrapper>
+		</SettingsContext>
+	</AuthContext>
+</CacheDB>
 
 <style>
 	:global(body) {
