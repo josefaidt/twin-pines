@@ -5,7 +5,8 @@
     "start": "yarn app start",
     "build": "yarn app build",
     "dev": "yarn app dev",
-    "app": "yarn workspace app run"
+    "app": "yarn workspace app run",
+    "lint": "eslint api/ packages/"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
@@ -16,6 +17,7 @@
     "eslint": "^6.8.0",
     "prettier": "^1.19.1"
   },
+  "eslintIgnore": ["packages/app/public", "**/node_modules"],
   "eslintConfig": {
     "extends": "@josefaidt/eslint-config"
   },
