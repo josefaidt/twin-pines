@@ -1,17 +1,19 @@
-name: Production Build
+name: Lint Check
 on:
-  push:
-    branches: [ master ]
-jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+  pull_request:
+    branches: [ * ]
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+jobs:
+  lint:
+    runs-on: ubuntu-latest
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
-    - name: Deploy to ZEIT Now
-      run: curl https://api.zeit.co/v1/integrations/deploy/QmeRaZ4pTnHNyskt8jdFDFzpJqqRQdaCuxvb6xk5cppDHG/QTntAq8kz8
+    - name: Use Node.js ${{ matrix.node_version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node_version }}
+    - name: npm install, lint
+      run: |
+        npm install
+        npm run lint
