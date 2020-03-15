@@ -8,6 +8,8 @@
     "app": "yarn workspace app run"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@josefaidt/eslint-config": "^0.1.14",
     "@josefaidt/prettier-config": "^0.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
@@ -20,7 +22,30 @@
   "prettier": "@josefaidt/prettier-config",
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "type-enum": [
+        2,
+        "always",
+        [
+          "chore",
+          "ci",
+          "docs",
+          "feat",
+          "fix",
+          "hotfix",
+          "refactor",
+          "style",
+          "release"
+        ]
+      ]
     }
   },
   "lint-staged": {
