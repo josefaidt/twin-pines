@@ -20,8 +20,15 @@ When working with Twin Pines it is important to note a few required environment 
 2. Rename `.env.sample` to `.env`
    1. populate fields with your secrets
 3. Install dependencies with `yarn` or `yarn install`
-4. Install ZEIT Now CLI globally with `yarn global add now`
-5. Run the Now development server with `now dev`
+4. Run the app's dev server with `yarn dev`
+5. Run the ZEIT Now dev server to enable API routes (must be a part of TwinPines Now Team)
+   1. Install ZEIT Now CLI globally with `yarn global add now`
+   2. Sign up for a ZEIT Now account and login locally
+   3. Set up the Now project with `now`
+   4. Step through the prompts, scoping `Twin Pines`
+      1. It will ask to link to existing project, select `y`
+      2. Link to existing twin pines (this will give necessary configuration)
+   5. Run the Now development server with `now dev`
 
 ## Future Plans
 

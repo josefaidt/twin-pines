@@ -8,6 +8,7 @@
     "build": "yarn app build",
     "dev": "yarn app dev",
     "app": "yarn workspace app run",
+    "deploy": "now --scope twinpines",
     "lint": "eslint api/ packages/"
   },
   "devDependencies": {
