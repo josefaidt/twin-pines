@@ -1,6 +1,8 @@
 {
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "start": "yarn app start",
     "build": "yarn app build",
@@ -17,7 +19,10 @@
     "eslint": "^6.8.0",
     "prettier": "^1.19.1"
   },
-  "eslintIgnore": ["packages/app/public", "**/node_modules"],
+  "eslintIgnore": [
+    "packages/app/public",
+    "**/node_modules"
+  ],
   "eslintConfig": {
     "extends": "@josefaidt/eslint-config"
   },
@@ -59,5 +64,8 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "faunadb": "^2.13.0"
   }
 }
