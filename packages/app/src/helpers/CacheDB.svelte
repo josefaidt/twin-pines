@@ -23,7 +23,7 @@
   }
 
   onMount(() => {
-    const raw = store.getItem('tpdb')
+    const raw = store.getItem(key)
     if (raw) {
       let parsed
       try {

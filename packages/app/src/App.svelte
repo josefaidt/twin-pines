@@ -1,11 +1,9 @@
 <script>
-	import { onMount, onDestroy } from 'svelte'
+	import { onMount, onDestroy, getContext } from 'svelte'
 	import { ThemeWrapper } from 'svelte-themer'
 	import DataStore from './helpers/data.store.js'
 	import GeoStore from './helpers/geo.store.js'
 	import GeoContext from './helpers/GeoContext.svelte'
-	import CacheDB from './helpers/CacheDB.svelte'
-	import AuthContext from './helpers/AuthContext.svelte'
 	import Settings from './helpers/settings.store.js'
 	import SettingsContext from './helpers/SettingsContext.svelte'
 	import Header from './components/Header.svelte'
@@ -42,27 +40,23 @@
 	onDestroy(() => unsubscribe() && unsubscribeFromGeo())
 </script>
 
-<CacheDB>
-	<AuthContext>
-		<SettingsContext>
-			{#if $Settings.geo}
-				<GeoContext />
-			{/if}
-			<ThemeWrapper themes={themes} storageKey="twin-pines__theme">
-				<Header />
-				<main>
-					<Form />
-					<div class="parks">
-						{#each parkData.data as park}
-							<ParkCard parkData={park} />
-						{/each}
-					</div>
-				</main>
-				<Footer />
-			</ThemeWrapper>
-		</SettingsContext>
-	</AuthContext>
-</CacheDB>
+<SettingsContext>
+	{#if $Settings.geo}
+		<GeoContext />
+	{/if}
+	<ThemeWrapper themes={themes} storageKey="twin-pines__theme">
+		<Header />
+		<main>
+			<Form />
+			<div class="parks">
+				{#each parkData.data as park}
+					<ParkCard parkData={park} />
+				{/each}
+			</div>
+		</main>
+		<Footer />
+	</ThemeWrapper>
+</SettingsContext>
 
 <style>
 	:global(body) {
