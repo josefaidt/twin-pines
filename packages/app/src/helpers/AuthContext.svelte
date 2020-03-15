@@ -5,7 +5,7 @@
   // Go to Auth0 to get the values and set everything up.
   // Make sure all callback urls are set correctly.
   const config = {
-    domain: process.env.AUTH0_DOMAIN,
+    domain: 'twin-pines.auth0.com',
     client_id: process.env.AUTH0_CLIENT_ID,
     // audience: 'https://twin-pines.now.sh'
   };
