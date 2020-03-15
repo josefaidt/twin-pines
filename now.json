@@ -7,7 +7,8 @@
     "LOCATIONIQ_API_KEY": "@locationiq_api_key",
     "AUTH_DOMAIN": "@auth_domain",
     "AUTH_CLIENT_ID": "@auth_client_id",
-    "AUTH_CLIENT_SECRET": "@auth_client_secret"
+    "AUTH_CLIENT_SECRET": "@auth_client_secret",
+    "DB_TOKEN": "@db_token"
   },
   "headers": [
     {
