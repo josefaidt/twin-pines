@@ -2,7 +2,8 @@ name: Lint Check
 on:
   pull_request:
     branches:
-      - *
+      - master
+      - dev
 
 jobs:
   lint:
