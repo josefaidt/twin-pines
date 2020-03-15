@@ -9,7 +9,7 @@
   const structure = {
     db,
     version,
-    settings: {
+    user: {
       geoEnabled: false,
     }
   }
@@ -17,7 +17,7 @@
   const setStore = () => store.setItem(key, JSON.stringify($Store))
 
   const toggleGeo = bool => {
-    Store.update(s => merge(s, { settings: { geoEnabled: bool || !s.settings.geoEnabled }}))
+    Store.update(s => merge(s, { user: { geoEnabled: bool || !s.settings.geoEnabled }}))
     setStore()
     // Store.update(s => ({ ...s, geoEnabled: bool || !s.geoEnabled }))
   }
