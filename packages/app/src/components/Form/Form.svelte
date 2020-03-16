@@ -1,6 +1,7 @@
 <script>
   import DataStore from '../../helpers/data.store.js'
   import states from '../../data/states-hash.json'
+  import Button from '../Button.svelte'
   let stateValue = null
   let _error = false
   let selected = new Map()
@@ -61,6 +62,7 @@
     on:submit|preventDefault="{submit}"
     on:invalid={validate}
     on:change={validate}
+    class="tp--find-form"
   >
     <div>
       <label for="state">Enter your State</label>
@@ -79,8 +81,8 @@
         {/if}
       </div>
     </div>
-    <div>
-      <input type="submit" value="Submit">
+    <div style="justify-content: flex-end;">
+      <Button type="submit" value="Submit">Submit</Button>
     </div>
   </form>
 </section>
@@ -122,7 +124,7 @@
     width: 100%;
   }
 
-  input[type="submit"] {
+  button[type="submit"], button {
     width: initial;
     grid-column-start: 2;
     justify-self: flex-end;

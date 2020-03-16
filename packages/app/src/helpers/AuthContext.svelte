@@ -31,7 +31,7 @@
   $: setContext('auth', { login, logout, isAuthenticated })
 </script>
 
-<pre>{JSON.stringify(state, null, 2)}</pre>
+<!-- <pre>{JSON.stringify(state, null, 2)}</pre> -->
 <slot>
   <!-- content -->
 </slot>
