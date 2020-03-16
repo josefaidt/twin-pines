@@ -4288,6 +4288,11 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
+svelte-routing@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/svelte-routing/-/svelte-routing-1.4.2.tgz#291160b537c9c73e711731eb099c48bb24cc3419"
+  integrity sha512-CSCKRLeOp9vjsDGGOEgL9DPm9HZLgZuTNehyTCl3K+6fCVH1Aw/K/WicavAVNcbsHmdR4wgF//0YVR9hrcdvGA==
+
 svelte-themer@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/svelte-themer/-/svelte-themer-0.1.4.tgz#b061d63ceeba5a3b2078d172e01c34ea63875edc"
