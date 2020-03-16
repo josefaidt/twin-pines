@@ -8,7 +8,8 @@
     "build": "yarn app build",
     "dev": "yarn app dev",
     "app": "yarn workspace app run",
-    "deploy": "now --scope twinpines",
+    "deploy": "now --local-config=now.dev.json --scope twinpines",
+    "t": "node scripts/swap-now-teams.js",
     "lint": "eslint api/ packages/"
   },
   "devDependencies": {
