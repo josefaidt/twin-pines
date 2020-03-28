@@ -1,6 +1,6 @@
-const data = require('./_parks.json')
-const stateData = require('./_parks.state.json')
+import data from './_parks.json'
+import stateData from './_parks.state.json'
 
-module.exports = (req, res) => {
+export default (req, res) => {
   res.json(stateData)
 }
