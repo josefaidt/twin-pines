@@ -12,6 +12,7 @@
     </header>
     <div>
       <p>Hello, {$user.nickname}</p>
+      <p>Role: {$user.role}</p>
       <p>Verified? {$user.email_verified}</p>
       <p>Geo Enabled? {$user.geoEnabled}</p>
       <img src={$user.picture} alt="profile picture">
