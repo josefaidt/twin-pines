@@ -25,7 +25,9 @@
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.6.4",
+    "apollo-boost": "^0.4.7",
     "deepmerge": "^4.2.2",
+    "graphql-tag": "^2.10.3",
     "isomorphic-unfetch": "^3.0.0",
     "jsonwebtoken": "^8.5.1",
     "node-fetch": "^2.6.0",

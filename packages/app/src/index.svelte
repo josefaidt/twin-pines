@@ -1,5 +1,5 @@
 <script>
-  import { onDestroy } from 'svelte'
+  import { onDestroy, setContext } from 'svelte'
   import App from './App.svelte'
   import CacheDB from './helpers/CacheDB.svelte'
   import AuthContext from './helpers/AuthContext.svelte'
@@ -20,9 +20,9 @@
 			}
 			locationData = data
 		}
-	})
+  })
 
-	onDestroy(() => unsubscribeFromGeo())
+  onDestroy(() => unsubscribeFromGeo())
 </script>
 
 <CacheDB>
