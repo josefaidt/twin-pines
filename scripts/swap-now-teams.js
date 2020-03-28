@@ -5,6 +5,23 @@
 // todo: write setup utility
 //    - spawn multiple now config setups, then rename based on submitted team
 //
+// /.now
+//    |- now.swap.json
+//    |- project.json
+//    |- project.personal.json
+//    |- project.team.json
+//
+// SWAP CONFIG
+/*
+    {
+      "current": "personal",
+      "teams": [
+        "personal",
+        "team"
+      ]
+    }
+*/
+//
 const { existsSync, ..._fs } = require('fs')
 const fs = _fs.promises
 const path = require('path')

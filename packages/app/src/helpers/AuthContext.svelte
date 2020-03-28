@@ -28,7 +28,7 @@
     authToken: $authToken.slice(0, 20)
   };
 
-  $: setContext('auth', { login, logout, isAuthenticated })
+  $: setContext('auth', { login, logout, isAuthenticated, userInfo })
 </script>
 
 <!-- <pre>{JSON.stringify(state, null, 2)}</pre> -->

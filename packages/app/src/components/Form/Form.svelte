@@ -81,7 +81,7 @@
         {/if}
       </div>
     </div>
-    <div style="justify-content: flex-end;">
+    <div style="justify-content: flex-end; font-size: 90%;">
       <Button type="submit" value="Submit">Submit</Button>
     </div>
   </form>
@@ -122,12 +122,6 @@
   input {
     margin: 0;
     width: 100%;
-  }
-
-  button[type="submit"], button {
-    width: initial;
-    grid-column-start: 2;
-    justify-self: flex-end;
   }
 
   .form--error {

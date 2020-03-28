@@ -1,6 +1,8 @@
 <script>
   import { getContext } from 'svelte'
+  import { link, Router } from 'svelte-routing'
   import { ThemeToggle } from 'svelte-themer'
+  import NavLink from './NavLink.svelte'
   import Button from './Button.svelte'
   import logo from '../img/logo_theme.svg'
   let title = 'Twin Pines'
@@ -16,16 +18,25 @@
 <header>
   <!-- <h1>{title}</h1> -->
   <div class="logo__container">
-    {@html logo}
+    <a href="/" use:link>
+      {@html logo}
+    </a>
   </div>
   <div class="nav__container">
     <nav>
-      <Button on:click={toggle}>{$theme.name}</Button>
-      {#if $isAuthenticated}
-        <Button on:click={() => logout()}>Logout</Button>
-      {:else}
-        <Button on:click={() => login()}>Login</Button>
-      {/if}
+      <Router>
+        <NavLink to="/">Home</NavLink>
+        {#if $isAuthenticated}
+          <NavLink to="profile">Profile</NavLink>
+          <Button on:click={() => logout()}>Logout</Button>
+        {:else}
+          <Button on:click={() => login()}>Login</Button>
+        {/if}
+      </Router>
+      <div class="nav--divider"></div>
+      <div class="nav--theme__container">
+        <Button on:click={toggle}>{$theme.name}</Button>
+      </div>
       <!-- <Button on:click={login()}>Login</Button> -->
     </nav>
   </div>
@@ -43,6 +54,14 @@
     margin: 0;
 
     align-self: flex-start;
+  }
+
+  .logo__container {
+    width: 20rem;
+  }
+
+  .logo__container svg {
+    width: 100%;
   }
 
   header {
@@ -65,6 +84,18 @@
     /* background-color: color(var(--theme-background) blackness(+ 80%)); */
     background-color: color(var(--theme-background) tint(- 80%));
     border-radius: 0.5rem;
+  }
+
+  .nav__container .nav--divider {
+    width: 2px;
+    background-color: var(--theme-text);
+    margin: -0.2rem 0;
+  }
+
+  .nav--theme__container {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 6rem;
   }
 
   nav {
