@@ -8,7 +8,7 @@
     "AUTH_DOMAIN": "@auth_domain",
     "AUTH_CLIENT_ID": "@auth_client_id",
     "AUTH_CLIENT_SECRET": "@auth_client_secret",
-    "DB_TOKEN": "@db_token"
+    "TP_DB_TOKEN": "@tp_db_token"
   },
   "build": {
     "env": {

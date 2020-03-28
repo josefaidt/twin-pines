@@ -1,0 +1,23 @@
+type User {
+  id: ID!
+  name: String!
+  token: AuthToken! @relation
+  settings: UserSettings! @relation
+}
+
+type UserSettings {
+  geo: Boolean!
+  user: User!
+}
+
+type AuthToken {
+  scope: String!
+  expires_in: Int!
+  token_type: String!
+  user: User!
+}
+
+type Query {
+  allUsers: [User]!
+  getUserById(id: ID, name: String): User
+}
