@@ -1,9 +1,27 @@
+import { send } from 'micro'
 import { JWK as jwk, JWT as jwt } from 'jose'
 import fetch from 'isomorphic-unfetch'
 
 const JWKS_URI = 'https://twin-pines.auth0.com/.well-known/jwks.json'
 
-export default async req => {
+export const withAuth = fn => async (req, res) => {
+  const errorResponse = {
+    errors: [
+      {
+        code: 401,
+        message: 'Not authenticated',
+      },
+    ],
+  }
+  const [isAuthenticated, user] = await authenticate(req)
+  if (!isAuthenticated) {
+    return send(res, 401, errorResponse)
+  } else {
+    await fn(req, res)
+  }
+}
+
+const authenticate = async req => {
   try {
     const { headers } = req
     if (!headers.authorization) {
@@ -23,3 +41,5 @@ export default async req => {
     return [false, null]
   }
 }
+
+export default authenticate
