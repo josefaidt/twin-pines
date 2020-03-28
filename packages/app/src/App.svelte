@@ -24,10 +24,4 @@
 		color: var(--theme-text);
 		position: relative;
 	}
-
-	.parks {
-		display: grid;
-		grid-auto-flow: row;
-		grid-gap: 1rem;
-	}
 </style>
