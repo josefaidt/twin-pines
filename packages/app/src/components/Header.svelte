@@ -29,7 +29,9 @@
         <Button on:click={() => login()}>Login</Button>
       {/if}
       <div class="nav__divider"></div>
-      <Button on:click={toggle}>{$theme.name}</Button>
+      <div class="nav--theme__container">
+        <Button on:click={toggle}>{$theme.name}</Button>
+      </div>
       <!-- <Button on:click={login()}>Login</Button> -->
     </nav>
   </div>
@@ -83,6 +85,12 @@
     width: 2px;
     background-color: var(--theme-text);
     margin: -0.2rem 0;
+  }
+
+  .nav--theme__container {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 6rem;
   }
 
   nav {
