@@ -1,6 +1,6 @@
-const fetch = require('node-fetch')
+import fetch from 'node-fetch'
 
-module.exports = async (req, res) => {
+export default async (req, res) => {
   const npsResponse = await fetch(`${process.env.NPS_API_URL}/alerts`, {
     headers: {
       'x-api-key': process.env.NPS_API_KEY,

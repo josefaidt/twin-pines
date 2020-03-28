@@ -1,23 +1,10 @@
 type User {
-  id: ID!
-  name: String!
-  token: AuthToken! @relation
-  settings: UserSettings! @relation
-}
-
-type UserSettings {
-  geo: Boolean!
-  user: User!
-}
-
-type AuthToken {
-  scope: String!
-  expires_in: Int!
-  token_type: String!
-  user: User!
+  id: String!
+  geoEnabled: Boolean
+  isAdmin: Boolean!
 }
 
 type Query {
   allUsers: [User]!
-  getUserById(id: ID, name: String): User
+  user(id: String): User
 }

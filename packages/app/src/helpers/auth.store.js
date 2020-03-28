@@ -5,6 +5,7 @@ import createAuth0Client from '@auth0/auth0-spa-js'
 const isLoading = writable(true)
 const isAuthenticated = writable(false)
 const authToken = writable('')
+const idToken = writable('')
 const userInfo = writable({})
 const authError = writable(null)
 const AUTH_KEY = {}
@@ -42,6 +43,9 @@ function createAuth(config) {
 
     const _isAuthenticated = await auth0.isAuthenticated()
     isAuthenticated.set(_isAuthenticated)
+
+    const _idToken = await auth0.getIdTokenClaims()
+    idToken.set(_idToken.__raw)
 
     if (_isAuthenticated) {
       // while on it, fetch the user info
@@ -85,6 +89,7 @@ function createAuth(config) {
     isLoading,
     isAuthenticated,
     authToken,
+    idToken,
     authError,
     login,
     logout,

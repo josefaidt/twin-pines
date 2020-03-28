@@ -1,6 +1,6 @@
-const fetch = require('node-fetch')
+import fetch from 'node-fetch'
 
-module.exports = async (req, res) => {
+export default async (req, res) => {
   const _res = await fetch(
     `https://us1.locationiq.com/v1/reverse.php?key=${process.env.LOCATIONIQ_API_KEY}&lat=${req.query.latitude}&lon=${req.query.longitude}&format=json`
   )

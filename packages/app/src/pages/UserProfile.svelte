@@ -1,8 +1,7 @@
 <script>
   import { getContext } from 'svelte'
 
-  let { userInfo: user } = getContext('auth')
-  console.log('USER IS', user)
+  let user = getContext('user')
 </script>
 
 <slot>
@@ -14,6 +13,7 @@
     <div>
       <p>Hello, {$user.nickname}</p>
       <p>Verified? {$user.email_verified}</p>
+      <p>Geo Enabled? {$user.geoEnabled}</p>
       <img src={$user.picture} alt="profile picture">
     </div>
   </section>

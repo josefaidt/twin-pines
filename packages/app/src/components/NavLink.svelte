@@ -1,5 +1,5 @@
 <script>
-  import { Router, Link } from "svelte-routing"
+  import { Link } from 'svelte-routing'
 
   export let ref = 'tp--link'
   export let to = ''

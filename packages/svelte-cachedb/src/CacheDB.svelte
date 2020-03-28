@@ -2,24 +2,25 @@
   import { setContext, onMount, onDestroy } from 'svelte'
   import { writable } from 'svelte/store'
   import merge from 'deepmerge'
-  export let db = 'twin-pines'
-  export let key = 'tpdb'
+  export let contextKey = 'cachedb'
+  export let db = 'cachedb'
+  export let key = 'svelte-cachedb'
   export let version = 1
   const store = localStorage
   const structure = {
     db,
     version,
-    user: {
-      geoEnabled: false,
-    }
   }
   let Store = writable(structure)
   const setStore = () => store.setItem(key, JSON.stringify($Store))
-
-  const toggleGeo = bool => {
-    Store.update(s => merge(s, { user: { geoEnabled: bool || !s.settings.geoEnabled }}))
-    setStore()
-    // Store.update(s => ({ ...s, geoEnabled: bool || !s.geoEnabled }))
+  
+  $: if ($Store) setStore()
+  $: setContext(contextKey, {
+    Store,
+  })
+  // ALWAYS SET STRUCTURE
+  $: if (!$Store.db || !$Store.version) {
+    Store.update(s => ({ ...s, ...structure }))
   }
 
   onMount(() => {
@@ -41,11 +42,6 @@
     } else {
       setStore()
     }
-  })
-
-  setContext('user', {
-    Store,
-    toggleGeo,
   })
 
   onDestroy(() => {
