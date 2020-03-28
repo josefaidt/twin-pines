@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+import fetch from 'isomorphic-unfetch'
 
 export default async (req, res) => {
   let url = `${process.env.NPS_API_URL}/parks`
