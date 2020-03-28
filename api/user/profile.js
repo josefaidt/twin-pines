@@ -10,18 +10,18 @@ const gqlClient = new GraphQLClient('https://graphql.fauna.com/graphql', {
 
 // SET UP USER MUTATIONS
 const createUserMutation = `
-mutation($id: String!, $geoEnabled: Boolean, $role: String!) {
+mutation($id: String!, $geoEnabled: Boolean, $role: String! ) {
   createUser(data: { id: $id, geoEnabled: $geoEnabled, role: $role }) {
     _id
     geoEnabled
-    isAdmin
+    role
   }
 }
 `
 
 export default async (req, res) => {
   const [isAuthenticated, user] = await authenticate(req)
-  const roles = await getUserRoles(user.sub)
+  const roles = await getUserRoles(user.authId)
 
   if (!isAuthenticated) {
     res.statusCode = 401
@@ -29,14 +29,14 @@ export default async (req, res) => {
   }
 
   try {
-    await gqlClient.request(createUserMutation, {
-      id: user.sub,
+    const data = await gqlClient.request(createUserMutation, {
+      id: user.authId,
       geoEnabled: false,
-      role: roles.map(r => ({ id: r.id, name: r.name, description: r.description })),
+      role: roles.length ? roles[0].name.toUpperCase() : 'USER',
     })
 
     res.statusCode = 200
-    res.end()
+    res.json(data.createUser)
   } catch (e) {
     console.error('Trying to create a user that already exists!')
     console.error(e)

@@ -1,14 +1,7 @@
 type User {
   id: String!
   geoEnabled: Boolean
-  roles: [Role]!
-}
-
-type Role {
-  id: String!
-  name: String
-  description: String
-  user: User! @relation
+  role: String!
 }
 
 type Query {

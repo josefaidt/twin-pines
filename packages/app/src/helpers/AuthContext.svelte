@@ -85,28 +85,35 @@
   $: setContext('query', query)
 
   // GET USER DETAILS FROM FAUNA GRAPHQL
+  // $: if ($idToken && $userInfo && $userInfo.sub) {
+  //   query({ token: $idToken, payload: {
+  //       query: userQuery,
+  //       variables: { id: $userInfo.sub },
+  //     }})
+  //     .then(({ data }) => {
+  //       if (data.user !== null) {
+  //         tpData.set(data.user)
+  //       } else {
+  //         query({ token: $idToken, payload: {
+  //           query: createUserMutation,
+  //           variables: {
+  //             id: $userInfo.sub,
+  //             geoEnabled: false,
+  //             isAdmin: false,
+  //           }
+  //         }})
+  //         .then(({ data }) => {
+  //           tpData.set(data.createUser)
+  //         })
+  //       }
+  //     });
+  // }
+
   $: if ($idToken && $userInfo && $userInfo.sub) {
-    query({ token: $idToken, payload: {
-        query: userQuery,
-        variables: { id: $userInfo.sub },
-      }})
-      .then(({ data }) => {
-        if (data.user !== null) {
-          tpData.set(data.user)
-        } else {
-          query({ token: $idToken, payload: {
-            query: createUserMutation,
-            variables: {
-              id: $userInfo.sub,
-              geoEnabled: false,
-              isAdmin: false,
-            }
-          }})
-          .then(({ data }) => {
-            tpData.set(data.createUser)
-          })
-        }
-      });
+    fetch('/api/user/profile', { headers: { Authorization: `Bearer ${$idToken}`} })
+      .then(r => r.json())
+      .then(data => tpData.set(data))
+      .catch(console.error)
   }
 </script>
 
