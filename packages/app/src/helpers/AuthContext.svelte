@@ -41,6 +41,7 @@
   const userQuery = `
     query($id: String!) {
       user(id: $id) {
+        _id
         geoEnabled
         isAdmin
       }
@@ -50,6 +51,7 @@
   const createUserMutation = `
     mutation($id: String!, $geoEnabled: Boolean!, $isAdmin: Boolean!) {
       createUser(data: { id: $id, geoEnabled: $geoEnabled, isAdmin: $isAdmin }) {
+        _id
         geoEnabled
         isAdmin
       }
