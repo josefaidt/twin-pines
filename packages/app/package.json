@@ -21,7 +21,8 @@
     "rollup-plugin-svg-import": "^1.4.0",
     "rollup-plugin-terser": "^5.2.0",
     "svelte": "^3.19.2",
-    "svelte-themer": "^0.1.4"
+    "svelte-themer": "^0.1.4",
+    "svelte-cachedb": "*"
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.6.4",
