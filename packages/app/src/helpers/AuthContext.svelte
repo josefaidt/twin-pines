@@ -31,13 +31,14 @@
     userInfo: $userInfo ? $userInfo.name : null,
     authToken: $authToken.slice(0, 20)
   };
-
-  let user = writable({ ...userInfo, ...tpData })
-
   $: setContext('auth', { login, logout, isAuthenticated, userInfo, tpData })
+
+  // SET UP USER CONTEXT
+  let user = writable({ ...userInfo, ...tpData })
   $: user.update(u => ({ ...$userInfo, ...$tpData }))
   $: setContext('user', user)
 
+  // SET UP USER QUERIES
   const userQuery = `
     query($id: String!) {
       user(id: $id) {
@@ -48,6 +49,7 @@
     }
   `
 
+  // SET UP USER MUTATIONS
   const createUserMutation = `
     mutation($id: String!, $geoEnabled: Boolean!, $isAdmin: Boolean!) {
       createUser(data: { id: $id, geoEnabled: $geoEnabled, isAdmin: $isAdmin }) {
@@ -58,7 +60,7 @@
     }
   `
 
-  // SET UP BASE QUERY
+  // SET UP BASE QUERY FN WRAPPER
   let query = async ({ token, payload }) => {
     const response = await fetch('/api/graphql', {
       method: 'POST',
@@ -93,6 +95,7 @@
   // SET QUERY CLIENT TO CONTEXT FOR CONSUMPTION
   $: setContext('query', query)
 
+  // GET USER DETAILS FROM FAUNA GRAPHQL
   $: if ($idToken && $userInfo && $userInfo.sub) {
     query({ token: $idToken, payload: {
         query: userQuery,
