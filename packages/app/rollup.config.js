@@ -12,6 +12,7 @@ import postcss from 'rollup-plugin-postcss'
 const production = !process.env.ROLLUP_WATCH
 
 if (!production) {
+  // eslint-disable-next-line global-require
   require('dotenv').config({ path: path.join(__dirname, '../../.env') })
 }
 
@@ -82,6 +83,7 @@ function serve() {
       if (!started) {
         started = true
 
+        // eslint-disable-next-line global-require
         require('child_process').spawn('npm', ['run', 'start', '--', '--dev'], {
           stdio: ['ignore', 'inherit', 'inherit'],
           shell: true,
