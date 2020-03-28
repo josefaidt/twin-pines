@@ -1,7 +1,8 @@
 <script>
   import { getContext } from 'svelte'
-  import { link } from 'svelte-routing'
+  import { link, Router } from 'svelte-routing'
   import { ThemeToggle } from 'svelte-themer'
+  import NavLink from './NavLink.svelte'
   import Button from './Button.svelte'
   import logo from '../img/logo_theme.svg'
   let title = 'Twin Pines'
@@ -21,14 +22,16 @@
   </div>
   <div class="nav__container">
     <nav>
-      <a href="/" use:link>Home</a>
-      {#if $isAuthenticated}
-        <a href="profile" use:link>Profile</a>
-        <Button on:click={() => logout()}>Logout</Button>
-      {:else}
-        <Button on:click={() => login()}>Login</Button>
-      {/if}
-      <div class="nav__divider"></div>
+      <Router>
+        <NavLink to="/">Home</NavLink>
+        {#if $isAuthenticated}
+          <NavLink to="profile">Profile</NavLink>
+          <Button on:click={() => logout()}>Logout</Button>
+        {:else}
+          <Button on:click={() => login()}>Login</Button>
+        {/if}
+      </Router>
+      <div class="nav--divider"></div>
       <div class="nav--theme__container">
         <Button on:click={toggle}>{$theme.name}</Button>
       </div>
@@ -81,7 +84,7 @@
     border-radius: 0.5rem;
   }
 
-  .nav__container .nav__divider {
+  .nav__container .nav--divider {
     width: 2px;
     background-color: var(--theme-text);
     margin: -0.2rem 0;
@@ -98,55 +101,5 @@
     grid-auto-flow: column;
     grid-gap: 1.5rem;
     font-family: Cabin;
-  }
-
-  nav a {
-    box-shadow: 
-    0.3em 0.3em 0 0 var(--theme-primary),
-    inset 0.3em 0.3em 0 0 var(--theme-primary);
-    transition: 0.25s;
-    cursor: pointer;
-    background-color: transparent;
-    padding: 0.5rem 1rem;
-    color: var(--theme-text);
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-bottom: 0.5em;
-    padding: 0.5rem 1rem;
-  }
-
-  nav a {
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-top-color: rgb(204, 204, 204);
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-right-color: rgb(204, 204, 204);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-bottom-color: rgb(204, 204, 204);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-left-color: rgb(204, 204, 204);
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    border-radius: 2px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-  }
-  nav a:hover,
-  nav a:focus {
-    box-shadow: 
-      0 0 0 0 var(--theme-primary),
-      inset 6em 3.5em 0 0 var(--theme-primary);
-    border-color: var(--theme-primary);
-    color: var(--theme-background);
   }
 </style>
