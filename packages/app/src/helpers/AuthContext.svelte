@@ -47,21 +47,72 @@
     }
   `
 
-  $: if ($idToken && $userInfo && $userInfo.sub) {
-    fetch('/api/graphql', {
+  const createUserMutation = `
+    mutation($id: String!, $geoEnabled: Boolean!, $isAdmin: Boolean!) {
+      createUser(data: { id: $id, geoEnabled: $geoEnabled, isAdmin: $isAdmin }) {
+        geoEnabled
+        isAdmin
+      }
+    }
+  `
+
+  // SET UP BASE QUERY
+  let query = async ({ token, payload }) => {
+    const response = await fetch('/api/graphql', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-        Authorization: `Bearer ${$idToken}`,
+        Authorization: `Bearer ${token}`,
       },
-      body: JSON.stringify({
+      body: JSON.stringify(payload)
+    })
+    const data = await response.json()
+    return data
+  }
+
+  // OVERWRITE QUERY WITH TOKEN ONCE AVAILABLE
+  //  BY DOING SO IT WILL NOT BLOCK THE USER CALL
+  $: if ($idToken) {
+    query = async ({ payload }) => {
+      const response = await fetch('/api/graphql', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          Authorization: `Bearer ${$idToken}`,
+        },
+        body: JSON.stringify(payload)
+      })
+      const data = await response.json()
+      return data
+    }
+  }
+  // SET QUERY CLIENT TO CONTEXT FOR CONSUMPTION
+  $: setContext('query', query)
+
+  $: if ($idToken && $userInfo && $userInfo.sub) {
+    query({ token: $idToken, payload: {
         query: userQuery,
         variables: { id: $userInfo.sub },
-      })
-    })
-      .then(r => r.json())
-      .then(({ data }) => tpData.set(data.user));
+      }})
+      .then(({ data }) => {
+        if (data.user !== null) {
+          tpData.set(data.user)
+        } else {
+          query({ token: $idToken, payload: {
+            query: createUserMutation,
+            variables: {
+              id: $userInfo.sub,
+              geoEnabled: false,
+              isAdmin: false,
+            }
+          }})
+          .then(({ data }) => {
+            tpData.set(data.createUser)
+          })
+        }
+      });
   }
 </script>
 
