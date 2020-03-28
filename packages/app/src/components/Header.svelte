@@ -18,7 +18,9 @@
 <header>
   <!-- <h1>{title}</h1> -->
   <div class="logo__container">
-    {@html logo}
+    <a href="/" use:link>
+      {@html logo}
+    </a>
   </div>
   <div class="nav__container">
     <nav>
