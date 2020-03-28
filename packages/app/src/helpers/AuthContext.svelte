@@ -31,28 +31,17 @@
     userInfo: $userInfo ? $userInfo.name : null,
     authToken: $authToken.slice(0, 20)
   };
-  $: setContext('auth', { login, logout, isAuthenticated, userInfo, tpData })
+  $: setContext('auth', { login, logout, isAuthenticated })
 
   // SET UP USER CONTEXT
   let user = writable({ ...userInfo, ...tpData })
-  $: user.update(u => ({ ...$userInfo, ...$tpData }))
+  $: user.update(u => ({ isAuthenticated, isLoading, ...$userInfo, ...$tpData }))
   $: setContext('user', user)
 
   // SET UP USER QUERIES
   const userQuery = `
     query($id: String!) {
       user(id: $id) {
-        _id
-        geoEnabled
-        isAdmin
-      }
-    }
-  `
-
-  // SET UP USER MUTATIONS
-  const createUserMutation = `
-    mutation($id: String!, $geoEnabled: Boolean!, $isAdmin: Boolean!) {
-      createUser(data: { id: $id, geoEnabled: $geoEnabled, isAdmin: $isAdmin }) {
         _id
         geoEnabled
         isAdmin
