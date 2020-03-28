@@ -1,7 +1,14 @@
 type User {
   id: String!
   geoEnabled: Boolean
-  isAdmin: Boolean!
+  roles: [Role]!
+}
+
+type Role {
+  id: String!
+  name: String
+  description: String
+  user: User! @relation
 }
 
 type Query {
