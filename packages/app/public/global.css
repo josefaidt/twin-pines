@@ -85,3 +85,9 @@ button:not(:disabled):active {
 button:focus {
   border-color: #666;
 }
+
+a:focus,
+button:focus,
+input:focus {
+  outline-color: var(--theme-text);
+}
