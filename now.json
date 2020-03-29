@@ -13,9 +13,9 @@
   },
   "build": {
     "env": {
-      "AUTH_DOMAIN": "@auth_domain",
-      "AUTH_CLIENT_ID": "@auth_client_id",
-      "AUTH_CLIENT_SECRET": "@auth_client_secret"
+      "TP_AUTH_DOMAIN": "@tp_auth_domain",
+      "TP_AUTH_CLIENT_ID": "@tp_auth_client_id",
+      "TP_AUTH_CLIENT_SECRET": "@tp_auth_client_secret"
     }
   },
   "headers": [
