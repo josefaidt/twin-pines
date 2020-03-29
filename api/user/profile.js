@@ -8,6 +8,17 @@ const gqlClient = new GraphQLClient('https://graphql.fauna.com/graphql', {
   },
 })
 
+// SET UP USER QUERIES
+const userQuery = `
+query($id: String!) {
+  user(id: $id) {
+    _id
+    geoEnabled
+    role
+  }
+}
+`
+
 // SET UP USER MUTATIONS
 const createUserMutation = `
 mutation($id: String!, $geoEnabled: Boolean, $role: String! ) {
@@ -28,19 +39,26 @@ export default async (req, res) => {
     res.end()
   }
 
-  try {
-    const data = await gqlClient.request(createUserMutation, {
+  const queryData = await gqlClient.request(userQuery, { id: user.authId })
+  if (queryData.user !== null) {
+    res.status(200).json(queryData.user)
+  } else {
+    console.info(`New user detected, creating ${user.authId}`)
+    const mutationData = await gqlClient.request(createUserMutation, {
       id: user.authId,
       geoEnabled: false,
       role: roles.length ? roles[0].name.toUpperCase() : 'USER',
     })
-
-    res.statusCode = 200
-    res.json(data.createUser)
-  } catch (e) {
-    console.error('Trying to create a user that already exists!')
-    console.error(e)
-    res.statusCode = 500
-    res.end()
+    if (mutationData && mutationData.createUser !== null) {
+      res.status(200).json(mutationData.createUser)
+    } else {
+      const errorResponse = [
+        {
+          code: 500,
+          message: 'Error calling GraphQL server',
+        },
+      ]
+      res.status(500).json(errorResponse)
+    }
   }
 }
