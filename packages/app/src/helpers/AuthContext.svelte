@@ -31,34 +31,12 @@
     userInfo: $userInfo ? $userInfo.name : null,
     authToken: $authToken.slice(0, 20)
   };
-  $: setContext('auth', { login, logout, isAuthenticated, userInfo, tpData })
+  $: setContext('auth', { login, logout, isAuthenticated })
 
   // SET UP USER CONTEXT
   let user = writable({ ...userInfo, ...tpData })
-  $: user.update(u => ({ ...$userInfo, ...$tpData }))
+  $: user.update(u => ({ isAuthenticated, isLoading, ...$userInfo, ...$tpData }))
   $: setContext('user', user)
-
-  // SET UP USER QUERIES
-  const userQuery = `
-    query($id: String!) {
-      user(id: $id) {
-        _id
-        geoEnabled
-        isAdmin
-      }
-    }
-  `
-
-  // SET UP USER MUTATIONS
-  const createUserMutation = `
-    mutation($id: String!, $geoEnabled: Boolean!, $isAdmin: Boolean!) {
-      createUser(data: { id: $id, geoEnabled: $geoEnabled, isAdmin: $isAdmin }) {
-        _id
-        geoEnabled
-        isAdmin
-      }
-    }
-  `
 
   // SET UP BASE QUERY FN WRAPPER
   let query = async ({ token, payload }) => {
@@ -95,29 +73,11 @@
   // SET QUERY CLIENT TO CONTEXT FOR CONSUMPTION
   $: setContext('query', query)
 
-  // GET USER DETAILS FROM FAUNA GRAPHQL
   $: if ($idToken && $userInfo && $userInfo.sub) {
-    query({ token: $idToken, payload: {
-        query: userQuery,
-        variables: { id: $userInfo.sub },
-      }})
-      .then(({ data }) => {
-        if (data.user !== null) {
-          tpData.set(data.user)
-        } else {
-          query({ token: $idToken, payload: {
-            query: createUserMutation,
-            variables: {
-              id: $userInfo.sub,
-              geoEnabled: false,
-              isAdmin: false,
-            }
-          }})
-          .then(({ data }) => {
-            tpData.set(data.createUser)
-          })
-        }
-      });
+    fetch('/api/user/profile', { headers: { Authorization: `Bearer ${$idToken}`} })
+      .then(r => r.json())
+      .then(data => tpData.set(data))
+      .catch(console.error)
   }
 </script>
 

@@ -5,16 +5,17 @@
     "NPS_API_URL": "https://developer.nps.gov/api/v1",
     "NPS_API_KEY": "@nps_api_key",
     "LOCATIONIQ_API_KEY": "@locationiq_api_key",
-    "AUTH_DOMAIN": "@auth_domain",
-    "AUTH_CLIENT_ID": "@auth_client_id",
-    "AUTH_CLIENT_SECRET": "@auth_client_secret",
-    "TP_DB_TOKEN": "@tp_db_token"
+    "TP_AUTH_DOMAIN": "@tp_auth_domain",
+    "TP_AUTH_CLIENT_ID": "@tp_auth_client_id",
+    "TP_AUTH_CLIENT_SECRET": "@tp_auth_client_secret",
+    "TP_DB_TOKEN": "@tp_db_token",
+    "TP_AUTH_MGMT_TOKEN": "@tp_auth_mgmt_token"
   },
   "build": {
     "env": {
-      "AUTH_DOMAIN": "@auth_domain",
-      "AUTH_CLIENT_ID": "@auth_client_id",
-      "AUTH_CLIENT_SECRET": "@auth_client_secret"
+      "TP_AUTH_DOMAIN": "@tp_auth_domain",
+      "TP_AUTH_CLIENT_ID": "@tp_auth_client_id",
+      "TP_AUTH_CLIENT_SECRET": "@tp_auth_client_secret"
     }
   },
   "headers": [

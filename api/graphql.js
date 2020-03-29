@@ -3,6 +3,7 @@ import { createHttpLink } from 'apollo-link-http'
 import { ApolloServer, makeRemoteExecutableSchema, introspectSchema } from 'apollo-server-micro'
 import fetch from 'isomorphic-unfetch'
 import authenticate from './_auth'
+import getUserRoles from './user/_roles'
 
 const link = createHttpLink({
   uri: 'https://graphql.fauna.com/graphql',
@@ -27,7 +28,8 @@ const getHandler = async () => {
     if (!isAuthenticated) {
       throw createError(401, 'Not authenticated')
     } else {
-      return { user }
+      const roles = await getUserRoles(user.sub)
+      return { user, roles }
     }
   }
 
