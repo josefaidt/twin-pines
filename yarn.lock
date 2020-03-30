@@ -459,11 +459,6 @@
     "@types/keygrip" "*"
     "@types/node" "*"
 
-"@types/estree@*":
-  version "0.0.44"
-  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.44.tgz#980cc5a29a3ef3bea6ff1f7d021047d7ea575e21"
-  integrity sha512-iaIVzr+w2ZJ5HkidlZ3EJM8VTZb2MJLCjw3V+505yVts0gRC4UMvjw0d1HPtGqI/HQC/KdsYtayfzl+AXY2R8g==
-
 "@types/estree@0.0.39":
   version "0.0.39"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
@@ -4602,15 +4597,6 @@ rollup-pluginutils@^2.0.1, rollup-pluginutils@^2.3.3, rollup-pluginutils@^2.8.2:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^1.32.0:
-  version "1.32.1"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.32.1.tgz#4480e52d9d9e2ae4b46ba0d9ddeaf3163940f9c4"
-  integrity sha512-/2HA0Ec70TvQnXdzynFffkjA6XN+1e2pEv/uKS5Ulca40g2L7KuOE3riasHoNVHOsFD5KKZgDsMk1CP3Tw9s+A==
-  dependencies:
-    "@types/estree" "*"
-    "@types/node" "*"
-    acorn "^7.1.0"
-
 rollup@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.0.2.tgz#0f63aa02bb106802a387380ee88b90b5c0449eaa"
@@ -5072,6 +5058,13 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
+svelte-cachedb@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/svelte-cachedb/-/svelte-cachedb-0.1.1.tgz#42a6defb2cf8aaf75b184676d955970a13829a70"
+  integrity sha512-ELdMUkFO76ZTR4NWct/MKpm1RojVvHk2a3GxXz+PkFNzph0wm0boZAq6Q7T4XTD0PpV+x0LcKDmlrSdWKbdS5Q==
+  dependencies:
+    deepmerge "^4.2.2"
+
 svelte-routing@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/svelte-routing/-/svelte-routing-1.4.2.tgz#291160b537c9c73e711731eb099c48bb24cc3419"
@@ -5081,11 +5074,6 @@ svelte-themer@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/svelte-themer/-/svelte-themer-0.1.4.tgz#b061d63ceeba5a3b2078d172e01c34ea63875edc"
   integrity sha512-jyjLRRyML7WuOyeUt/RG7Oo0yoqBRmAkqyDAjeNf13YhWC4j2xaQ9OZr7UGZDJOyRgosEM1SID9/FyTiyjWVpg==
-
-svelte@^3.19.1:
-  version "3.20.1"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.20.1.tgz#8417fcd883a2f534b642a0737368272e651cf3ac"
-  integrity sha512-m/dw52BZf+p6KYnyKLErIcGalu4pwJrQbUM7VZriRw6ZlJj1qMAZsLcIWzEB3I0hhdJwkKb7LrrvUIeqmbO92Q==
 
 svelte@^3.19.2:
   version "3.19.2"

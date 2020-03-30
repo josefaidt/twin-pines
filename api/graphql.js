@@ -1,6 +1,11 @@
 import { send, createError } from 'micro'
 import { createHttpLink } from 'apollo-link-http'
-import { ApolloServer, makeRemoteExecutableSchema, introspectSchema } from 'apollo-server-micro'
+import {
+  ApolloServer,
+  makeRemoteExecutableSchema,
+  introspectSchema,
+  addResolveFunctionsToSchema,
+} from 'apollo-server-micro'
 import fetch from 'isomorphic-unfetch'
 import authenticate from './_auth'
 import getUserRoles from './user/_roles'

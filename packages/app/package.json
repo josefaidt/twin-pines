@@ -21,7 +21,6 @@
     "rollup-plugin-svg-import": "^1.4.0",
     "rollup-plugin-terser": "^5.2.0",
     "svelte": "^3.19.2",
-    "svelte-cachedb": "*",
     "svelte-themer": "^0.1.4"
   },
   "dependencies": {
